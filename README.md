@@ -24,7 +24,7 @@
 <h3 align="center">Portfolio Website</h3>
 
   <p align="center">
-    This is the repository of my portfolio wesite's code. It can used as a templete for future projects.
+    This is the repository of my portfolio website's code-base. It can used as a template for future projects.
     <br />
     <a href="https://github.com/joshidipesh12/portfolio-nextjs"><strong>Explore the docs »</strong></a>
     <br />
@@ -67,20 +67,20 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![My Portfolio][product-screenshot]](public/screenshot.png) -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
 - [Next.js](https://nextjs.org/)
-- [React.js](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Angular](https://angular.io/)
-- [Svelte](https://svelte.dev/)
-- [Laravel](https://laravel.com)
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
+<!-- - [React.js](https://reactjs.org/) -->
+<!-- - [Vue.js](https://vuejs.org/) -->
+<!-- - [Angular](https://angular.io/) -->
+<!-- - [Svelte](https://svelte.dev/) -->
+<!-- - [Laravel](https://laravel.com) -->
+<!-- - [Bootstrap](https://getbootstrap.com) -->
+<!-- - [JQuery](https://jquery.com) -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -88,8 +88,6 @@
 
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
@@ -99,53 +97,51 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
   ```
+  
+  `or`
+
+- yarn
+  ```sh
+  npm install --global yarn
+  ```
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/joshidipesh12/portfolio-nextjs.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
-   npm install
+    npm install && npm run dev
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+   
+   or
+   
+   ```sh
+    yarn install && yarn dev
    ```
+
+_For more examples, please refer to the [NEXT.JS Documentation](https://nextjs.org/docs/getting-started)_
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
+<!-- 
 ## Roadmap
 
 - [] Feature 1
 - [] Feature 2
 - [] Feature 3
-  - [] Nested Feature
-
-See the [open issues](https://github.com/joshidipesh12/portfolio-nextjs/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+  - [] Nested Feature -->
 
 <!-- CONTRIBUTING -->
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+See the [open issues](https://github.com/joshidipesh12/portfolio-nextjs/issues) for a full list of proposed features (and known issues).
+
+<!-- Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**. -->
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
@@ -162,7 +158,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -170,7 +166,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [@_joshi_dipesh_](https://twitter.com/_joshi_dipesh_) - joshidipesh12@gmail.com
+Dipesh Joshi - [@_joshi_dipesh_](https://instagram.com/_joshi_dipesh_) - [joshidipesh12@gmail.com](mailto:joshidipesh12@gmail.com)
 
 Project Link: [https://github.com/joshidipesh12/portfolio-nextjs](https://github.com/joshidipesh12/portfolio-nextjs)
 
@@ -178,13 +174,13 @@ Project Link: [https://github.com/joshidipesh12/portfolio-nextjs](https://github
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+<!-- ## Acknowledgments -->
 
-- []()
-- []()
-- []()
+<!-- - []() -->
+<!-- - []() -->
+<!-- - []() -->
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#top">back to top</a>)</p> -->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
