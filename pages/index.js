@@ -29,11 +29,11 @@ export default function Home() {
         <div className={styles.home_first}>
           <Fade cascade right={width > 767} when={loaded}>
             <div className={styles.home_content}>
-              <div className={styles.domains}>Hi!, I&apos;m</div>
+              <div className={styles.domains}>hi!, i&apos;m</div>
               <div className={`${styles.colorful} ${styles.domains}`}>
-                {data.name}
+                {data.name.toLowerCase()}
               </div>
-              <div className={styles.domains}>a Full-Stack Dev</div>
+              <div className={styles.domains}>a full-stack dev</div>
             </div>
           </Fade>
           <Fade delay={500} bottom={width < 767} when={loaded}>

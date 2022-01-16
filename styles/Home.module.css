@@ -8,20 +8,20 @@
 
 .home_first {
   display: flex;
-  height: 83vh;
+  height: 80vh;
   width: 100vw;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 7vw;
+  padding-inline: 10vw;
 }
 
 .my_image {
   position: relative;
-  width: 40vw;
-  max-width: 20rem;
-  height: 100%;
+  width: 35vw;
+  max-width: 28rem;
+  height: 90%;
 }
 
 .home_content {
@@ -39,7 +39,7 @@
 }
 
 .colorful {
-  background: linear-gradient(90deg, #3066e4, #d112df), -webkit-linear-gradient(90deg, #3066e4, #d112df);
+  background: linear-gradient(90deg, #3066e4, #ee00ff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -74,7 +74,7 @@
 
   .my_image {
     width: 25vw;
-    min-width: 20rem;
+    min-width: 15rem;
     height: 50%;
   }
 
