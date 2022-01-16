@@ -18,13 +18,17 @@ function Navbar() {
           <Link href="/Resume.pdf">RESUME</Link>
         </div>
         <div className={styles.link}>
-          <a target="_blank" href="https://github.com/joshidipesh12">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/joshidipesh12">
             PROJECTS
           </a>
         </div>
         <div className={styles.link}>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://gdsc.community.dev/department-of-computer-science-university-of-delhi-delhi/">
             LATEST
           </a>
