@@ -168,7 +168,7 @@ Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
 Dipesh Joshi - [@_joshi_dipesh_](https://instagram.com/_joshi_dipesh_) - [joshidipesh12@gmail.com](mailto:joshidipesh12@gmail.com)
 
-Project Link: [https://github.com/joshidipesh12/portfolio-nextjs](https://github.com/joshidipesh12/portfolio-nextjs)
+Project Link: [https://github.com/joshidipesh12/joshidipesh12.github.io](https://github.com/joshidipesh12/joshidipesh12.github.io)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
