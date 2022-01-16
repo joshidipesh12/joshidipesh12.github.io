@@ -70,6 +70,7 @@
   .home_first {
     padding-inline: 0;
     justify-content: center;
+    height: 74vh;
   }
 
   .my_image {
