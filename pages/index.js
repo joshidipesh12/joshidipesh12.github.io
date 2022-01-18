@@ -7,12 +7,6 @@ import styles from '../styles/Home.module.css';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import data from '../public/myData.json';
 
-const social_default = {
-  style: {position: 'absolute'},
-  fgColor: 'black',
-  bgColor: 'white',
-};
-
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
   const {height, width} = useWindowDimensions();
@@ -22,8 +16,8 @@ export default function Home() {
       <Head>
         <title>Hola amigos ✨🎀</title>
         <meta name="description" content="Hi there, I'm Dipesh" />
-        <meta name="mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
