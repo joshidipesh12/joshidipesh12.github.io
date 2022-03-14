@@ -80,6 +80,7 @@
   }
 
   .home_content {
+    /* display: flex; */
     align-items: center;
   }
 
@@ -87,7 +88,7 @@
     font-size: 10vw;
   }
 
-  .colorful {
-    text-transform: uppercase;
+  .home_content {
+    /* text-transform: uppercase; */
   }
 }
