@@ -1,14 +1,16 @@
 .container {
   overflow: hidden;
+  background: black;
 }
 
 .main {
-  background: black;
+  min-height: -webkit-fill-available;
+  height: 100%;
 }
 
 .home_first {
   display: flex;
-  height: 80vh;
+  height: calc(80 * var(--vh));
   width: 100vw;
   flex-direction: row;
   flex-wrap: wrap;
@@ -52,6 +54,8 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  margin-top: calc(10 * var(--vh));
 }
 
 .footer a {
@@ -70,7 +74,7 @@
   .home_first {
     padding-inline: 0;
     justify-content: center;
-    height: 74vh;
+    height: calc(75 * var(--vh));
   }
 
   .my_image {

@@ -5,9 +5,9 @@ import styles from '../styles/Home.module.css';
 
 const Layout = ({children}) => {
   return (
-    <div>
+    <div className={styles.main}>
       <Navbar />
-      <main className={styles.main}>{children}</main>
+      <main>{children}</main>
       <Bottom />
     </div>
   );

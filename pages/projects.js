@@ -1,16 +1,16 @@
 import Link from 'next/link';
 import React from 'react';
+import Bottom from '../components/Bottom';
 import Layout from '../components/layout';
-import styles from "../styles/Home.module.css"
+import Navbar from '../components/Navbar';
+import styles from '../styles/Project.module.css';
 
 function projects({}) {
   return (
-    <Layout>
-      <div className={styles.home_first}>
-        <div></div>
-        <div className={styles.my_image}></div>
-      </div>
-    </Layout>
+    <main className={styles.main}>
+      <Navbar />
+      <Bottom />
+    </main>
   );
 }
 
