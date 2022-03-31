@@ -3,14 +3,9 @@ import data from '../public/myData.json';
 import styles from '../styles/Navbar.module.css';
 import {SocialIcon} from 'react-social-icons';
 import Fade from 'react-reveal/Fade';
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useRef} from 'react';
 
-const social_default = {
-  bgColor: '#00000000',
-  fgColor: '#fff',
-  style: {height: 40, width: 40},
-};
-const isMobile = false; //['Android', 'iPhone'].includes(navigator?.platform);
+// const isMobile = ['Android', 'iPhone'].includes(navigator?.platform);
 
 function Bottom() {
   const [entry, setEntry] = useState(false);
@@ -21,20 +16,38 @@ function Bottom() {
   }, []);
 
   return (
-    <Fade when={entry} cascade bottom>
-      <div className={styles.bottom}>
-        <SocialIcon url={data.links['linkedin']} {...social_default} />
-        <SocialIcon url={data.links['instagram']} {...social_default} />
-        <SocialIcon url={data.links['facebook']} {...social_default} />
-        <SocialIcon url={data.links['github']} {...social_default} />
+    <div className={styles.bottom}>
+      <Button1 e={entry} url={data.links['linkedin']} color="#0e76a8" />
+      <Button1 e={entry} url={data.links['instagram']} color="#ffdf9e" />
+      <Button1 e={entry} url={data.links['facebook']} color="#4267B2" />
+      <Button1 e={entry} url={data.links['github']} color="#f0f0f0" />
+      <Button1 e={entry} url={`tel:${data.phone}`} color="#AAFF00" />
+      <Button1 e={entry} url={`mailto:${data.email}`} color="#Bf0f1f" />
+    </div>
+  );
+}
+
+const Button1 = ({url, color, e}) => {
+  const [active, setActive] = useState(false);
+  const buttonRef = useRef();
+
+  useEffect(() => {}, [active]);
+
+  return (
+    <Fade when={e} cascade bottom>
+      <div className={styles.icon}>
         <SocialIcon
-          url={isMobile ? data.links['whatsapp'] : `tel:${data.phone}`}
-          {...social_default}
+          url={url}
+          ref={buttonRef}
+          bgColor="#00000000"
+          style={{height: 40, width: 40}}
+          fgColor={!active ? '#ffffff' : color}
+          onMouseEnter={() => setActive(true)}
+          onMouseLeave={() => setActive(false)}
         />
-        <SocialIcon url={`mailto:${data.email}`} {...social_default} />
       </div>
     </Fade>
   );
-}
+};
 
 export default Bottom;
