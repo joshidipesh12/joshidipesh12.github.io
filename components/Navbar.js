@@ -18,7 +18,7 @@ function Navbar() {
           <Link href="/Resume.pdf">RESUME</Link>
         </div>
         <div className={styles.link}>
-          <a href="/projects">PROJECTS</a>
+          <Link href="/projects">PROJECTS</Link>
         </div>
         <div className={styles.link}>
           <a
