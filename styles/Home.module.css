@@ -55,7 +55,8 @@
   justify-content: center;
   align-items: center;
   background-color: white;
-  margin-top: calc(10 * var(--vh));
+  margin-top: calc(15.5 * var(--vh));
+  margin-top: 15.5vh;
 }
 
 .footer a {
