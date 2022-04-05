@@ -3,13 +3,13 @@ import React, {useState} from 'react';
 import data from '../public/myData.json';
 import styles from '../styles/Navbar.module.css';
 
-function Navbar() {
+function Navbar({containerStyle}) {
   const twoWord = useState(
     data.twoWords[Math.floor(Math.random() * data.twoWords.length)],
   )[0];
 
   return (
-    <header className={styles.container}>
+    <header style={containerStyle} className={styles.container}>
       <div className={styles.name}>
         <Link href="/">{`${twoWord}.`}</Link>
       </div>

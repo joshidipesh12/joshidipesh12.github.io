@@ -7,7 +7,7 @@ import {useEffect, useState, useRef} from 'react';
 
 // const isMobile = ['Android', 'iPhone'].includes(navigator?.platform);
 
-function Bottom() {
+function Bottom({containerStyle}) {
   const [entry, setEntry] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function Bottom() {
   }, []);
 
   return (
-    <div className={styles.bottom}>
+    <div className={styles.bottom} style={containerStyle}>
       <Button1 e={entry} url={data.links['linkedin']} color="#0e76a8" />
       <Button1 e={entry} url={data.links['instagram']} color="#ffdf9e" />
       <Button1 e={entry} url={data.links['facebook']} color="#4267B2" />

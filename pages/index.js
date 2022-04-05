@@ -2,10 +2,11 @@ import {useState} from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
-import Layout from '../components/layout';
 import styles from '../styles/Home.module.css';
 import useWindowDimensions from '../hooks/useWindowDimensions';
 import data from '../public/myData.json';
+import Navbar from '../components/Navbar';
+import Bottom from '../components/Bottom';
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -22,7 +23,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
+      <div className={styles.main}>
+        <Navbar containerStyle={{position: 'absolute', top: 0}} />
         <div className={styles.home_first}>
           <Fade cascade right={width > 767} when={loaded}>
             <div className={styles.home_content}>
@@ -49,7 +51,8 @@ export default function Home() {
             </div>
           </Fade>
         </div>
-      </Layout>
+        <Bottom containerStyle={{position: 'absolute', bottom: 0}} />
+      </div>
 
       <footer className={styles.footer}>
         <a
