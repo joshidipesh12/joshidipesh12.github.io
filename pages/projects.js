@@ -8,23 +8,23 @@ function Projects() {
   return (
     <div className={styles.snapContainer}>
       <div
-        // style={{backgroundColor: 'magenta'}}
+        style={{backgroundColor: 'magenta'}}
         className={styles.section}>
         <Navbar containerStyle={{position: 'absolute', top: 0}} />
         <div className={styles.content}>Cooking up Fun Stuff.!</div>
       </div>
       <div
-        // style={{backgroundColor: 'yellow'}}
+        style={{backgroundColor: 'yellow'}}
         className={styles.section}>
         <div className={styles.content}>Cooking up Fun Stuff.!</div>
         </div>
       <div
-        // style={{backgroundColor: 'green'}}
+        style={{backgroundColor: 'green'}}
         className={styles.section}>
         <div className={styles.content}>Cooking up Fun Stuff.!</div>
         </div>
       <div
-        // style={{backgroundColor: 'red'}}
+        style={{backgroundColor: 'red'}}
         className={styles.section}>
         <div className={styles.content}>Cooking up Fun Stuff.!</div>
         <Bottom />
