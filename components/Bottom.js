@@ -17,9 +17,9 @@ function Bottom({containerStyle}) {
 
   return (
     <div className={styles.bottom} style={containerStyle}>
-      <Button1 e={entry} url={data.links['linkedin']} color="#0e76a8" />
       <Button1 e={entry} url={data.links['instagram']} color="#ffdf9e" />
       <Button1 e={entry} url={data.links['facebook']} color="#4267B2" />
+      <Button1 e={entry} url={data.links['linkedin']} color="#0e76a8" />
       <Button1 e={entry} url={data.links['github']} color="#f0f0f0" />
       <Button1 e={entry} url={`tel:${data.phone}`} color="#AAFF00" />
       <Button1 e={entry} url={`mailto:${data.email}`} color="#Bf0f1f" />
@@ -44,6 +44,7 @@ const Button1 = ({url, color, e}) => {
           fgColor={!active ? '#ffffff' : color}
           onMouseEnter={() => setActive(true)}
           onMouseLeave={() => setActive(false)}
+          target="_blank"
         />
       </div>
     </Fade>

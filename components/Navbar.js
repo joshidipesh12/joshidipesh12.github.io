@@ -15,7 +15,7 @@ function Navbar({containerStyle}) {
       </div>
       <section className={styles.links}>
         <div className={styles.link}>
-          <Link href="/Resume.pdf">RESUME</Link>
+          <Link href="/resume">RESUME</Link>
         </div>
         <div className={styles.link}>
           <Link href="/projects">PROJECTS</Link>
