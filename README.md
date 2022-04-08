@@ -185,16 +185,16 @@ Project Link: [https://github.com/joshidipesh12/joshidipesh12.github.io](https:/
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/joshidipesh12/portfolio-nextjs.svg?style=for-the-badge
-[contributors-url]: https://github.com/joshidipesh12/portfolio-nextjs/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/joshidipesh12/portfolio-nextjs.svg?style=for-the-badge
-[forks-url]: https://github.com/joshidipesh12/portfolio-nextjs/network/members
-[stars-shield]: https://img.shields.io/github/stars/joshidipesh12/portfolio-nextjs.svg?style=for-the-badge
-[stars-url]: https://github.com/joshidipesh12/portfolio-nextjs/stargazers
-[issues-shield]: https://img.shields.io/github/issues/joshidipesh12/portfolio-nextjs.svg?style=for-the-badge
-[issues-url]: https://github.com/joshidipesh12/portfolio-nextjs/issues
-[license-shield]: https://img.shields.io/github/license/joshidipesh12/portfolio-nextjs.svg?style=for-the-badge
-[license-url]: https://github.com/joshidipesh12/portfolio-nextjs/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/joshidipesh12/joshidipesh12.github.io.svg?style=for-the-badge
+[contributors-url]: https://github.com/joshidipesh12/joshidipesh12.github.io/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/joshidipesh12/joshidipesh12.github.io.svg?style=for-the-badge
+[forks-url]: https://github.com/joshidipesh12/joshidipesh12.github.io/network/members
+[stars-shield]: https://img.shields.io/github/stars/joshidipesh12/joshidipesh12.github.io.svg?style=for-the-badge
+[stars-url]: https://github.com/joshidipesh12/joshidipesh12.github.io/stargazers
+[issues-shield]: https://img.shields.io/github/issues/joshidipesh12/joshidipesh12.github.io.svg?style=for-the-badge
+[issues-url]: https://github.com/joshidipesh12/joshidipesh12.github.io/issues
+[license-shield]: https://img.shields.io/github/license/joshidipesh12/joshidipesh12.github.io.svg?style=for-the-badge
+[license-url]: https://github.com/joshidipesh12/joshidipesh12.github.io/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/joshidipesh12
 [product-screenshot]: images/screenshot.png
