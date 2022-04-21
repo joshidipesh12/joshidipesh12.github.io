@@ -13,8 +13,8 @@ function Projects() {
   return (
     <div className={styles.snapContainer}>
       <Navbar containerStyle={{position: 'absolute', top: 0}} />
-      {data.map(project => (
-        <div className={styles.section}>
+      {data.map((project, index) => (
+        <div key={index} className={styles.section}>
           <h2 className={`${styles.sectionHead} ${styles.neonText}`}>
             {project.title} Projects
           </h2>
@@ -24,8 +24,8 @@ function Projects() {
             whileDrag={{cursor: 'grabbing'}}
             whileHover={{cursor: 'grab'}}
             className={styles.content}>
-            {project.p.map(i => (
-              <ProjectCard key={i.title} item={i} />
+            {project.p.map((i, _) => (
+              <ProjectCard key={_} item={i} />
             ))}
           </motion.div>
         </div>
