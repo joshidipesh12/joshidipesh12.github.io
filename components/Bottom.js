@@ -29,7 +29,6 @@ function Bottom({containerStyle}) {
 
 const Button1 = ({url, color, e}) => {
   const [active, setActive] = useState(false);
-  const buttonRef = useRef();
 
   useEffect(() => {}, [active]);
 
@@ -38,7 +37,6 @@ const Button1 = ({url, color, e}) => {
       <div className={styles.icon}>
         <SocialIcon
           url={url}
-          ref={buttonRef}
           bgColor="#00000000"
           style={{height: 40, width: 40}}
           fgColor={!active ? '#ffffff' : color}

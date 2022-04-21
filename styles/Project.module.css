@@ -4,7 +4,6 @@
   width: 100vw;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  /* scroll-padding-top: calc(-10 * var(--vh)); */
 }
 
 .section {
@@ -14,14 +13,77 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  /* background-color: black; */
+}
+
+.sectionHead {
+  /* color: aliceblue; */
+  position: sticky;
+  top: 15vh;
+  text-align: center;
+  margin-bottom: 0%;
+  text-transform: uppercase;
 }
 
 .content {
-  background-color: beige;
   flex: 1;
-  margin: 10%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-inline: 10%;
+}
+
+.projectCard {
+  background-color: rgb(7, 7, 7);
+  color: white;
+  width: 25vw;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  margin-right: 3%;
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.401);
+  font-family: 'Poppins', sans-serif;
+}
+
+.projectCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 50px 0px rgba(143, 79, 255, 0.401);
+}
+
+.cardContent {
+  padding-inline: 8%;
+}
+
+.cardImage {
+  position: relative;
+  height: 60%;
+  width: 100%;
+  mask-image: linear-gradient(black 85%, transparent 99%);
+}
+
+.cardDescp {
+  text-align: justify;
+  height: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00fbff,
+    0 0 82px #00fbff, 0 0 92px #00fbff, 0 0 102px #00fbff, 0 0 151px #00fbff;
+  /* animation: neonShift 3s ease-in-out 0.5s infinite; */
+}
+
+@media (max-width: 767px) {
+  .content {
+    flex-wrap: wrap;
+  }
+  .projectCard {
+    width: 80vw;
+    margin-block: 0vh;
+  }
+  .projectCard:active,
+  .projectCard:hover {
+    height: 30%;
+  }
 }
