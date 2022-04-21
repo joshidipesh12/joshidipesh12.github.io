@@ -22,5 +22,121 @@
     "treasure today",
     "dream always",
     "radiant positivity"
+  ],
+  "projects": [
+    {
+      "title": "Front-End",
+      "p": [
+        {
+          "title": "TravMing",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "description": "",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        },
+        {
+          "title": "Nalanda Bazaar",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "description": "",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        },
+        {
+          "title": "Guruzon",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "description": "",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Back-End",
+      "p": [
+        {
+          "title": "Sankalan Server 2022",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "description": "",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        },
+        {
+          "title": "Anime Avatar APIs",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "description": "",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        },
+        {
+          "title": "Express + MongoDB Template",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "description": "",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "UI/UX",
+      "p": [
+        {
+          "title": "TravMing",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "description": "",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        },
+        {
+          "title": "TravMing",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "description": "",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        },
+        {
+          "title": "TravMing",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "description": "",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        }
+      ]
+    }
   ]
 }
