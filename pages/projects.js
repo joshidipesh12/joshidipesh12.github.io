@@ -26,8 +26,12 @@ function Projects() {
         </div>
       ))}
       <div className={styles.section}>
-        <h2 className={styles.sectionHead}>Source Code</h2>
-        <div className={styles.content}>Cooking up Fun Stuff.!</div>
+        <h2 className={`${styles.sectionHead} ${styles.neonText}`}>
+          Source Code
+        </h2>
+        <div className={styles.content}>
+          <div style={{flex: 1, backgroundColor: 'grey'}}></div>
+        </div>
         <Bottom />
       </div>
     </div>
