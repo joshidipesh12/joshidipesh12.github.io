@@ -51,8 +51,9 @@
   animation: rotateShadow 5s 0.4s ease-out infinite;
 }
 
-.projectCard:active {
-  height: 70%;
+.projectCard:active > .cardImage {
+  height: 10rem;
+  transform: scale(1.2);
 }
 
 @keyframes rotateShadow {
@@ -81,8 +82,9 @@
 
 .cardImage {
   position: relative;
-  height: 60%;
+  height: 0px;
   width: 100%;
+  transition: all 0.4s ease;
   mask-image: linear-gradient(black 85%, transparent 99%);
 }
 
@@ -102,7 +104,7 @@
 @media (max-width: 767px) {
   .content {
     flex-wrap: wrap;
-    max-height: 80%;
+    height: 80%;
     margin-top: 20%;
   }
   .projectCard {

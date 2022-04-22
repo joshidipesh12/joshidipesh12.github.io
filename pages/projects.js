@@ -29,9 +29,7 @@ function Projects() {
         <h2 className={`${styles.sectionHead} ${styles.neonText}`}>
           Source Code
         </h2>
-        <div className={styles.content}>
-          <div style={{flex: 1, backgroundColor: 'grey'}}></div>
-        </div>
+        <div className={styles.content}></div>
         <Bottom />
       </div>
     </div>
@@ -52,7 +50,7 @@ const ProjectCard = ({item}) => {
       <div className={styles.cardContent}>
         <h2 className={styles.cardTitle}>{item.title}</h2>
         <p className={styles.cardDescp}>{item.subtitle}</p>
-        <div>
+        <div className={styles.cardLinks}>
           <a className={styles.cardLink}></a>
         </div>
       </div>
