@@ -4,7 +4,6 @@ import Bottom from '../components/Bottom';
 import Navbar from '../components/Navbar';
 import styles from '../styles/Project.module.css';
 import config from '../public/myData.json';
-import {motion} from 'framer-motion';
 
 function Projects() {
   const data = config.projects;
@@ -55,7 +54,8 @@ const ProjectCard = ({item, onClick, active}) => {
           src={item.image}
           layout="fill"
           objectFit="cover"
-          // sizes=""
+          sizes="20vw"
+          priority={true}
         />
       </div>
       <div className={styles.cardContent}>
