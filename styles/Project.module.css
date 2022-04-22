@@ -37,6 +37,7 @@
   width: 25vw;
   border-radius: 15px;
   overflow: hidden;
+  overflow-y: scroll;
   transition: all 0.4s ease;
   margin-right: 3%;
   box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.401);
@@ -86,30 +87,45 @@
 }
 
 .cardDescp {
-  text-align: justify;
   height: 100px;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .neonText {
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00fbff,
     0 0 82px #00fbff, 0 0 92px #00fbff, 0 0 102px #00fbff, 0 0 151px #00fbff;
-  /* animation: neonShift 3s ease-in-out 0.5s infinite; */
 }
 
 @media (max-width: 767px) {
   .content {
     flex-wrap: wrap;
+    max-height: 80%;
+    margin-top: 20%;
   }
   .projectCard {
     width: 80vw;
     margin-block: 0vh;
+    cursor: auto;
   }
   .projectCard:active,
   .projectCard:hover {
     height: 30%;
+    transform: scale(1.1);
+  }
+
+  .projectCard:active > *,
+  .projectCard:hover > * {
+    /* overflow: visible; */
+    white-space: normal;
+    text-overflow: '';
+  }
+
+  .cardTitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
