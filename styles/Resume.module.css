@@ -22,10 +22,13 @@
 }
 
 @media (max-width: 767px) {
+  .resume {
+    padding-inline: 0%;
+  }
   .pdf {
     height: 150vw;
     min-height: calc(70 * var(--vh));
-    margin-inline: 5%;
+    margin-inline: 0%;
   }
 }
 
