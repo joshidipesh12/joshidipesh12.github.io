@@ -18,16 +18,11 @@ function Projects() {
           <h2 className={`${styles.sectionHead} ${styles.neonText}`}>
             {project.title} Projects
           </h2>
-          <motion.div
-            drag="x"
-            dragConstraints={{right: 0, left: 0}}
-            whileDrag={{cursor: 'grabbing'}}
-            whileHover={{cursor: 'grab'}}
-            className={styles.content}>
+          <div className={styles.content}>
             {project.p.map((i, _) => (
               <ProjectCard key={_} item={i} />
             ))}
-          </motion.div>
+          </div>
         </div>
       ))}
       <div className={styles.section}>
