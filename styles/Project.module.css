@@ -109,11 +109,15 @@
     width: 80vw;
     margin-block: 0vh;
     cursor: auto;
+    background-color: rgb(24, 24, 24);
+    max-height: 30%;
+    overflow: hidden;
   }
   .projectCard:active,
   .projectCard:hover {
     height: 30%;
     transform: scale(1.1);
+    overflow: auto;
   }
 
   .projectCard:active > *,
