@@ -42,37 +42,37 @@
   margin-right: 3%;
   box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.401);
   font-family: 'Poppins', sans-serif;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .projectCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 5px 50px 0px rgba(144, 79, 255, 0.333);
+  box-shadow: 0px 5px 50px 5px rgba(144, 79, 255, 0.333);
   animation: rotateShadow 5s 0.4s ease-out infinite;
 }
 
-.projectCard:active > .cardImage {
+.activeCard > .cardImage {
   height: 10rem;
-  transform: scale(1.2);
+  transform: scaleX(1.2) scaleY(1.5);
 }
 
 @keyframes rotateShadow {
   0%,
-  50%,
-  100% {
-    box-shadow: 0px 5px 50px 0px rgba(144, 79, 255, 0.333);
+  55%,
+  98% {
+    box-shadow: 0px 5px 50px 5px rgba(144, 79, 255, 0.4);
   }
-  25%,
-  75% {
-    box-shadow: 0px -5px 50px 0px rgba(255, 79, 161, 0.533);
+  22%,
+  78% {
+    box-shadow: 0px -5px 50px 6px rgba(255, 79, 161, 0.6);
   }
-  12%,
-  63% {
-    box-shadow: 5px 0px 50px 0px rgba(255, 234, 79, 0.433);
+  15%,
+  60% {
+    box-shadow: 5px 0px 50px 2px rgba(255, 234, 79, 0.5);
   }
   37%,
   88% {
-    box-shadow: -5px 0px 50px 0px rgba(79, 255, 176, 0.333);
+    box-shadow: -5px 0px 50px 0px rgba(79, 255, 176, 0.7);
   }
 }
 
@@ -105,7 +105,7 @@
   .content {
     flex-wrap: wrap;
     height: 80%;
-    margin-top: 20%;
+    margin-top: 10%;
   }
   .projectCard {
     width: 80vw;
@@ -116,14 +116,14 @@
     overflow: hidden;
   }
   .projectCard:active,
-  .projectCard:hover {
+  .projectCard:focus,
+  .activeCard {
     height: 30%;
     transform: scale(1.1);
     overflow: auto;
   }
 
-  .projectCard:active > *,
-  .projectCard:hover > * {
+  .activeCard > * {
     /* overflow: visible; */
     white-space: normal;
     text-overflow: '';

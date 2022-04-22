@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import React from 'react';
+import React, {useState} from 'react';
 import Bottom from '../components/Bottom';
 import Navbar from '../components/Navbar';
 import styles from '../styles/Project.module.css';
@@ -8,7 +8,7 @@ import {motion} from 'framer-motion';
 
 function Projects() {
   const data = config.projects;
-  // const [active, setActive] = useState(second)
+  const [activeCard, setActive] = useState(null);
 
   return (
     <div className={styles.snapContainer}>
@@ -20,7 +20,12 @@ function Projects() {
           </h2>
           <div className={styles.content}>
             {project.p.map((i, _) => (
-              <ProjectCard key={_} item={i} />
+              <ProjectCard
+                onClick={() => setActive(i)}
+                key={_}
+                active={activeCard}
+                item={i}
+              />
             ))}
           </div>
         </div>
@@ -36,15 +41,21 @@ function Projects() {
   );
 }
 
-const ProjectCard = ({item}) => {
+const ProjectCard = ({item, onClick, active}) => {
   return (
-    <motion.div key={item.title} className={styles.projectCard}>
+    <a
+      onClick={onClick}
+      onTouchStart={onClick}
+      className={`${styles.projectCard} ${
+        item === active ? styles.activeCard : ''
+      }`}>
       <div className={styles.cardImage}>
         <Image
           draggable="false"
           src={item.image}
           layout="fill"
           objectFit="cover"
+          // sizes=""
         />
       </div>
       <div className={styles.cardContent}>
@@ -54,7 +65,7 @@ const ProjectCard = ({item}) => {
           <a className={styles.cardLink}></a>
         </div>
       </div>
-    </motion.div>
+    </a>
   );
 };
 
