@@ -1,9 +1,10 @@
 import Image from 'next/image';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Bottom from '../components/Bottom';
 import Navbar from '../components/Navbar';
 import styles from '../styles/Project.module.css';
 import config from '../public/myData.json';
+import useIsMobile from '../hooks/useIsMobile';
 
 function Projects() {
   const data = config.projects;
@@ -41,10 +42,17 @@ function Projects() {
 }
 
 const ProjectCard = ({item, onClick, active}) => {
+  const isMobile = useIsMobile();
+
   return (
     <a
-      onClick={onClick}
-      onTouchStart={onClick}
+      onClick={() => {
+        !isMobile ? onClick() : null;
+      }}
+      onContextMenu={e => {
+        onClick();
+        e.preventDefault();
+      }}
       className={`${styles.projectCard} ${
         item === active ? styles.activeCard : ''
       }`}>
@@ -62,7 +70,7 @@ const ProjectCard = ({item, onClick, active}) => {
         <h2 className={styles.cardTitle}>{item.title}</h2>
         <p className={styles.cardDescp}>{item.subtitle}</p>
         <div className={styles.cardLinks}>
-          <a className={styles.cardLink}></a>
+          {/* <a className={styles.cardLink}></a> */}
         </div>
       </div>
     </a>

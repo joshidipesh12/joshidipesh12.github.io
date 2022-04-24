@@ -96,9 +96,18 @@
 }
 
 .neonText {
-  color: #fff;
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00fbff,
-    0 0 82px #00fbff, 0 0 92px #00fbff, 0 0 102px #00fbff, 0 0 151px #00fbff;
+  color: #d2d1d1;
+  animation: turnOn 0.7s ease-in 1s forwards;
+}
+
+@keyframes turnOn {
+  0% {
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00fbff,
+      0 0 82px #00fbff, 0 0 92px #00fbff, 0 0 102px #00fbff, 0 0 151px #00fbff;
+  }
 }
 
 @media (max-width: 767px) {
@@ -123,15 +132,17 @@
     overflow: auto;
   }
 
-  .activeCard > * {
-    /* overflow: visible; */
-    white-space: normal;
-    text-overflow: '';
+  .sectionHead {
+    top: calc(12 * var(--vh));
   }
 
   .cardTitle {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+
+  .projectCard.activeCard > .cardTitle {
+    margin-top: 20rem;
   }
 }
