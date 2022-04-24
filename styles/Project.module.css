@@ -125,8 +125,7 @@
     overflow: hidden;
   }
   .projectCard:active,
-  .projectCard:focus,
-  .activeCard {
+  .projectCard:focus {
     height: 30%;
     transform: scale(1.1);
     overflow: auto;
