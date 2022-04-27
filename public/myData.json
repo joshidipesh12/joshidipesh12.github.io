@@ -25,12 +25,12 @@
   ],
   "projects": [
     {
-      "title": "Front-End",
+      "title": "Mobile Applications",
       "p": [
         {
-          "title": "TravMing",
+          "title": "ParkEz Rider",
           "subtitle": "Vacation Planing and Accomodation Selector",
-          "image": "/images/travming.png",
+          "image": "/images/nalanda.png",
           "links": [
             {"url": "", "icon": ""},
             {"url": "", "icon": ""},
@@ -60,10 +60,10 @@
       ]
     },
     {
-      "title": "Back-End",
+      "title": "Web Development",
       "p": [
         {
-          "title": "Sankalan Server 2022",
+          "title": "TravMing",
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/travming.png",
           "links": [
@@ -95,7 +95,42 @@
       ]
     },
     {
-      "title": "UI/UX",
+      "title": "UI/UX & Designing",
+      "p": [
+        {
+          "title": "TravMing",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        },
+        {
+          "title": "TravMing",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        },
+        {
+          "title": "TravMing",
+          "subtitle": "Vacation Planing and Accomodation Selector",
+          "image": "/images/travming.png",
+          "links": [
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""},
+            {"url": "", "icon": ""}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Extras",
       "p": [
         {
           "title": "TravMing",

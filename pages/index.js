@@ -13,7 +13,7 @@ export default function Home() {
   const {height, width} = useWindowDimensions();
 
   return (
-    <div className={styles.container}>
+    <html className={`${styles.container} transition-fade`}>
       <Head>
         <title>Hola amigos ✨🎀</title>
         <meta name="description" content="Hi there, I'm Dipesh" />
@@ -65,6 +65,6 @@ export default function Home() {
           </span>
         </a>
       </footer>
-    </div>
+    </html>
   );
 }

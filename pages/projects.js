@@ -11,18 +11,18 @@ function Projects() {
   const [activeCard, setActive] = useState(null);
 
   return (
-    <div className={styles.snapContainer}>
+    <html className={styles.snapContainer} onClick={() => setActive(null)}>
       <Navbar containerStyle={{position: 'absolute', top: 0}} />
       {data.map((project, index) => (
         <div key={index} className={styles.section}>
           <h2 className={`${styles.sectionHead} ${styles.neonText}`}>
-            {project.title} Projects
+            {project.title}
           </h2>
           <div className={styles.content}>
-            {project.p.map((i, _) => (
+            {project.p.map((i, k) => (
               <ProjectCard
                 onClick={() => setActive(i)}
-                key={_}
+                key={k}
                 active={activeCard}
                 item={i}
               />
@@ -37,7 +37,7 @@ function Projects() {
         <div className={styles.content}></div>
         <Bottom />
       </div>
-    </div>
+    </html>
   );
 }
 
@@ -46,8 +46,8 @@ const ProjectCard = ({item, onClick, active}) => {
 
   return (
     <a
-      onClick={() => {
-        !isMobile ? onClick() : null;
+      onClick={e => {
+        isMobile ? null : onClick();
       }}
       onContextMenu={e => {
         onClick();
