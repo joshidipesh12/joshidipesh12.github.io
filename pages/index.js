@@ -13,7 +13,7 @@ export default function Home() {
   const {height, width} = useWindowDimensions();
 
   return (
-    <html className={`${styles.container} transition-fade`}>
+    <html className={styles.container}>
       <Head>
         <title>Hola amigos ✨🎀</title>
         <meta name="description" content="Hi there, I'm Dipesh" />

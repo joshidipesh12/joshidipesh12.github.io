@@ -21,7 +21,7 @@ function Projects() {
           <div className={styles.content}>
             {project.p.map((i, k) => (
               <ProjectCard
-                onClick={() => setActive(i)}
+                activate={() => setActive(i)}
                 key={k}
                 active={activeCard}
                 item={i}
@@ -41,16 +41,16 @@ function Projects() {
   );
 }
 
-const ProjectCard = ({item, onClick, active}) => {
+const ProjectCard = ({item, activate, active}) => {
   const isMobile = useIsMobile();
 
   return (
     <a
       onClick={e => {
-        isMobile ? null : onClick();
+        isMobile ? null : activate();
       }}
       onContextMenu={e => {
-        onClick();
+        activate();
         e.preventDefault();
       }}
       className={`${styles.projectCard} ${
@@ -62,7 +62,7 @@ const ProjectCard = ({item, onClick, active}) => {
           src={item.image}
           layout="fill"
           objectFit="cover"
-          sizes="20vw"
+          sizes="10vw 20vw 30vw"
           priority={true}
         />
       </div>

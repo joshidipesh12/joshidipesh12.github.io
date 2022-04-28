@@ -28,13 +28,16 @@
       "title": "Mobile Applications",
       "p": [
         {
-          "title": "ParkEz Rider",
-          "subtitle": "Vacation Planing and Accomodation Selector",
+          "title": "ParkEz Rider (Drivey)",
+          "subtitle": "Better parking experience with Drivey",
           "image": "/images/nalanda.png",
           "links": [
-            {"url": "", "icon": ""},
-            {"url": "", "icon": ""},
-            {"url": "", "icon": ""}
+            {
+              "url": "https://play.google.com/store/apps/details?id=com.parkezrider",
+              "icon": "play-store.png",
+              "type": "Play Store"
+            },
+            {"url": "http://drivey.co.in/", "icon": "", "type": "Website"}
           ]
         },
         {
@@ -42,19 +45,17 @@
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/nalanda.png",
           "links": [
-            {"url": "", "icon": ""},
-            {"url": "", "icon": ""},
-            {"url": "", "icon": ""}
+            {"url": "", "icon": "", "type": ""},
+            {"url": "", "icon": "", "type": ""}
           ]
         },
         {
-          "title": "Door2Door Groceries",
+          "title": "Door-2-Door Groceries",
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/door2door.png",
           "links": [
-            {"url": "", "icon": ""},
-            {"url": "", "icon": ""},
-            {"url": "", "icon": ""}
+            {"url": "", "icon": "", "type": ""},
+            {"url": "", "icon": "", "type": ""}
           ]
         }
       ]
