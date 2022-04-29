@@ -53,6 +53,16 @@
   z-index: 2;
 }
 
+.projectCard:hover > .expand {
+  display: block;
+}
+
+.activeCard:hover > .expand {
+  display: block;
+  transform: rotate(180deg);
+  top: 12rem;
+}
+
 .activeCard > .cardImage {
   height: 10rem;
   transform: scale(1.5);
@@ -90,11 +100,17 @@
   mask-image: linear-gradient(black 85%, transparent 99%);
 }
 
+.cardTitle,
 .cardDescp {
-  height: 100px;
+  margin-right: 5%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+/* REMOVE THIS */
+.cardDescp {
+  height: 100px;
 }
 
 .neonText {
@@ -112,42 +128,66 @@
   }
 }
 
+.expand {
+  display: none;
+  position: absolute;
+  top: 10%;
+  right: 3%;
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .snapContainer {
     scroll-snap-type: y proximity;
   }
 
+  .projectCard:hover > .expand {
+    display: none;
+  }
+
+  .section {
+    scroll-snap-align: center;
+  }
+
   .content {
     flex-wrap: wrap;
-    height: 80%;
-    margin-top: 10%;
-  }
-  .projectCard {
-    width: 80vw;
-    margin-block: 0vh;
-    cursor: auto;
-    background-color: rgb(24, 24, 24);
-    max-height: 30%;
-    overflow: hidden;
-  }
-  .projectCard:active,
-  .projectCard:focus {
-    height: 30%;
-    transform: scale(1.1);
-    overflow: auto;
+    height: 78%;
+    margin-top: 5%;
   }
 
   .sectionHead {
     top: calc(12 * var(--vh));
   }
 
-  .cardTitle {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  .neonText {
+    color: #d2d1d1;
+    animation: turnOn 0s ease-in forwards;
   }
 
-  .projectCard.activeCard > .cardTitle {
-    margin-top: 20rem;
+  .projectCard {
+    width: 80vw;
+    cursor: auto;
+    margin-block: 0vh;
+    background-color: rgb(24, 24, 24);
+    max-height: 30%;
+    overflow: hidden;
+  }
+
+  .projectCard:active,
+  .projectCard:focus {
+    height: 30%;
+    transform: scale(1.1);
+    overflow: auto;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

@@ -8,10 +8,10 @@ import useIsMobile from '../hooks/useIsMobile';
 
 function Projects() {
   const data = config.projects;
-  const [activeCard, setActive] = useState(null);
+  const [activeCard, setActive] = useState();
 
   return (
-    <html className={styles.snapContainer} onClick={() => setActive(null)}>
+    <div className={styles.snapContainer}>
       <Navbar containerStyle={{position: 'absolute', top: 0}} />
       {data.map((project, index) => (
         <div key={index} className={styles.section}>
@@ -21,9 +21,9 @@ function Projects() {
           <div className={styles.content}>
             {project.p.map((i, k) => (
               <ProjectCard
-                activate={() => setActive(i)}
+                activate={rev => setActive(rev ?? i.title)}
                 key={k}
-                active={activeCard}
+                isActive={activeCard === i.title}
                 item={i}
               />
             ))}
@@ -37,33 +37,42 @@ function Projects() {
         <div className={styles.content}></div>
         <Bottom />
       </div>
-    </html>
+    </div>
   );
 }
 
-const ProjectCard = ({item, activate, active}) => {
+const ProjectCard = ({item, activate, isActive = false}) => {
   const isMobile = useIsMobile();
 
   return (
-    <a
-      onClick={e => {
-        isMobile ? null : activate();
-      }}
+    <div
       onContextMenu={e => {
         activate();
         e.preventDefault();
       }}
       className={`${styles.projectCard} ${
-        item === active ? styles.activeCard : ''
+        isActive ? styles.activeCard : '' //styles.nonActive
       }`}>
+      <div
+        className={styles.expand}
+        onClick={e => {
+          activate(isActive ? isActive : null);
+        }}>
+        <Image
+          layout="fixed"
+          height="20px"
+          width="20px"
+          src="/icons/chevron-down.svg"
+        />
+      </div>
       <div className={styles.cardImage}>
         <Image
           draggable="false"
           src={item.image}
           layout="fill"
           objectFit="cover"
-          sizes="10vw 20vw 30vw"
-          priority={true}
+          priority
+          role="img"
         />
       </div>
       <div className={styles.cardContent}>
@@ -73,7 +82,7 @@ const ProjectCard = ({item, activate, active}) => {
           {/* <a className={styles.cardLink}></a> */}
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 

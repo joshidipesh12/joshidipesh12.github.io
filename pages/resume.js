@@ -6,7 +6,7 @@ import styles from '../styles/Resume.module.css';
 
 function Resume() {
   return (
-    <html className={styles.main}>
+    <div className={styles.main}>
       <Navbar containerStyle={{position: 'sticky', top: 0}} />
       <div className={styles.resume}>
         <iframe
@@ -16,7 +16,7 @@ function Resume() {
           allowFullScreen></iframe>
       </div>
       <Bottom />
-    </html>
+    </div>
   );
 }
 
