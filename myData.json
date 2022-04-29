@@ -30,14 +30,18 @@
         {
           "title": "ParkEz Rider (Drivey)",
           "subtitle": "Better parking experience with Drivey",
-          "image": "/images/nalanda.png",
+          "image": "/images/drivey.png",
           "links": [
             {
               "url": "https://play.google.com/store/apps/details?id=com.parkezrider",
               "icon": "play-store.png",
-              "type": "Play Store"
+              "type": "App Store"
             },
-            {"url": "http://drivey.co.in/", "icon": "", "type": "Website"}
+            {
+              "url": "http://drivey.co.in/",
+              "icon": "web.png",
+              "type": "Website"
+            }
           ]
         },
         {
@@ -45,8 +49,16 @@
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/nalanda.png",
           "links": [
-            {"url": "", "icon": "", "type": ""},
-            {"url": "", "icon": "", "type": ""}
+            {
+              "url": "https://play.google.com/store/apps/details?id=com.nalandabazar",
+              "icon": "play-store.png",
+              "type": "App Store"
+            },
+            {
+              "url": "http://drivey.co.in/",
+              "icon": "web.png",
+              "type": "Website"
+            }
           ]
         },
         {
@@ -99,7 +111,7 @@
       "title": "UI/UX & Designing",
       "p": [
         {
-          "title": "TravMing",
+          "title": "4-Runners Furnitures",
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/travming.png",
           "links": [
@@ -109,7 +121,7 @@
           ]
         },
         {
-          "title": "TravMing",
+          "title": "Weather App (Glass)",
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/travming.png",
           "links": [
@@ -119,7 +131,7 @@
           ]
         },
         {
-          "title": "TravMing",
+          "title": "Thought Board DUCS",
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/travming.png",
           "links": [
@@ -134,7 +146,7 @@
       "title": "Extras",
       "p": [
         {
-          "title": "TravMing",
+          "title": "Deepfake Detection (Article)",
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/travming.png",
           "links": [
@@ -144,7 +156,7 @@
           ]
         },
         {
-          "title": "TravMing",
+          "title": "Poison Snippets (App Monetization)",
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/travming.png",
           "links": [
@@ -154,7 +166,7 @@
           ]
         },
         {
-          "title": "TravMing",
+          "title": "Creative Posters",
           "subtitle": "Vacation Planing and Accomodation Selector",
           "image": "/images/travming.png",
           "links": [
