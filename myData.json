@@ -28,8 +28,8 @@
       "title": "Mobile Applications",
       "p": [
         {
-          "title": "ParkEz Rider (Drivey)",
-          "subtitle": "Better parking experience with Drivey",
+          "title": "Drivey Rider",
+          "subtitle": "Parking Automation by ParkEz",
           "image": "/images/drivey.png",
           "links": [
             {
@@ -46,7 +46,7 @@
         },
         {
           "title": "Nalanda Bazaar",
-          "subtitle": "Vacation Planing and Accomodation Selector",
+          "subtitle": "Online Electronics Store",
           "image": "/images/nalanda.png",
           "links": [
             {
@@ -62,8 +62,8 @@
           ]
         },
         {
-          "title": "Door-2-Door Groceries",
-          "subtitle": "Vacation Planing and Accomodation Selector",
+          "title": "Door - 2 - Door",
+          "subtitle": "UI/UX for Groceries App",
           "image": "/images/door2door.png",
           "links": [
             {"url": "", "icon": "", "type": ""},
@@ -77,7 +77,7 @@
       "p": [
         {
           "title": "TravMing",
-          "subtitle": "Vacation Planing and Accomodation Selector",
+          "subtitle": "Explore Accomodations",
           "image": "/images/travming.png",
           "links": [
             {"url": "", "icon": ""},
@@ -87,8 +87,8 @@
         },
         {
           "title": "Anime Avatar APIs",
-          "subtitle": "Vacation Planing and Accomodation Selector",
-          "image": "/images/travming.png",
+          "subtitle": "Get Your ANIME Avatars",
+          "image": "/images/animeapis.png",
           "links": [
             {"url": "", "icon": ""},
             {"url": "", "icon": ""},
@@ -96,9 +96,9 @@
           ]
         },
         {
-          "title": "Express + MongoDB Template",
-          "subtitle": "Vacation Planing and Accomodation Selector",
-          "image": "/images/travming.png",
+          "title": "Express + MongoDB",
+          "subtitle": "BackEnd Server Template",
+          "image": "/images/express_mongodb.png",
           "links": [
             {"url": "", "icon": ""},
             {"url": "", "icon": ""},
@@ -111,9 +111,9 @@
       "title": "UI/UX & Designing",
       "p": [
         {
-          "title": "4-Runners Furnitures",
-          "subtitle": "Vacation Planing and Accomodation Selector",
-          "image": "/images/travming.png",
+          "title": "4-Runners Website",
+          "subtitle": "Furniture Shop Landing Page",
+          "image": "/images/4runners.png",
           "links": [
             {"url": "", "icon": ""},
             {"url": "", "icon": ""},
@@ -121,9 +121,9 @@
           ]
         },
         {
-          "title": "Weather App (Glass)",
-          "subtitle": "Vacation Planing and Accomodation Selector",
-          "image": "/images/travming.png",
+          "title": "Weather Buddy",
+          "subtitle": "Glassmorphism Design App",
+          "image": "/images/weatherapp.png",
           "links": [
             {"url": "", "icon": ""},
             {"url": "", "icon": ""},
@@ -131,9 +131,9 @@
           ]
         },
         {
-          "title": "Thought Board DUCS",
-          "subtitle": "Vacation Planing and Accomodation Selector",
-          "image": "/images/travming.png",
+          "title": "Thought Board",
+          "subtitle": "Open Messaging @ DUCS",
+          "image": "/images/thoughtboard.png",
           "links": [
             {"url": "", "icon": ""},
             {"url": "", "icon": ""},
@@ -146,9 +146,9 @@
       "title": "Extras",
       "p": [
         {
-          "title": "Deepfake Detection (Article)",
-          "subtitle": "Vacation Planing and Accomodation Selector",
-          "image": "/images/travming.png",
+          "title": "Deepfake Detection",
+          "subtitle": "Article in SRIJAN'22 Magazine",
+          "image": "/images/deepfake.webp",
           "links": [
             {"url": "", "icon": ""},
             {"url": "", "icon": ""},
@@ -156,9 +156,9 @@
           ]
         },
         {
-          "title": "Poison Snippets (App Monetization)",
-          "subtitle": "Vacation Planing and Accomodation Selector",
-          "image": "/images/travming.png",
+          "title": "Poison Snippets",
+          "subtitle": "Monetize Frontend Apps",
+          "image": "/images/poison.png",
           "links": [
             {"url": "", "icon": ""},
             {"url": "", "icon": ""},
@@ -167,7 +167,7 @@
         },
         {
           "title": "Creative Posters",
-          "subtitle": "Vacation Planing and Accomodation Selector",
+          "subtitle": "Made for Multiple Events",
           "image": "/images/travming.png",
           "links": [
             {"url": "", "icon": ""},
