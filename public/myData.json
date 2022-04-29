@@ -28,8 +28,8 @@
       "title": "Mobile Applications",
       "p": [
         {
-          "title": "ParkEz Rider (Drivey)",
-          "subtitle": "Better parking experience with Drivey",
+          "title": "Drivey Rider",
+          "subtitle": "Parking Automation by ParkEz",
           "image": "/images/drivey.png",
           "links": [
             {
@@ -46,7 +46,7 @@
         },
         {
           "title": "Nalanda Bazaar",
-          "subtitle": "Vacation Planing and Accomodation Selector",
+          "subtitle": "Online Electronics Store",
           "image": "/images/nalanda.png",
           "links": [
             {
@@ -62,8 +62,8 @@
           ]
         },
         {
-          "title": "Door-2-Door Groceries",
-          "subtitle": "Vacation Planing and Accomodation Selector",
+          "title": "Door - 2 - Door",
+          "subtitle": "UI/UX for Groceries App",
           "image": "/images/door2door.png",
           "links": [
             {"url": "", "icon": "", "type": ""},

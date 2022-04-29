@@ -60,8 +60,8 @@ const ProjectCard = ({item, activate, isActive = false}) => {
         }}>
         <Image
           layout="fixed"
-          height="20px"
-          width="20px"
+          height="40px"
+          width="40px"
           src="/icons/chevron-down.svg"
         />
       </div>

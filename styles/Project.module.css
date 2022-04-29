@@ -40,6 +40,7 @@
   overflow: hidden;
   overflow-y: scroll;
   margin-inline: 1%;
+  margin-block: 1%;
   transition: all 0.4s ease;
   box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.5);
   font-family: 'Poppins', sans-serif;
@@ -106,6 +107,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  text-align: center;
 }
 
 /* REMOVE THIS */
@@ -175,7 +177,7 @@
 
   .projectCard:active,
   .projectCard:focus {
-    height: 30%;
+    height: 28%;
     transform: scale(1.1);
     overflow: auto;
   }
