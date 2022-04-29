@@ -55,7 +55,7 @@
               "type": "App Store"
             },
             {
-              "url": "http://drivey.co.in/",
+              "url": "http://nalandabazaar.com/",
               "icon": "web.png",
               "type": "Website"
             }
@@ -168,7 +168,7 @@
         {
           "title": "Creative Posters",
           "subtitle": "Made for Multiple Events",
-          "image": "/images/travming.png",
+          "image": "/images/posters.png",
           "links": [
             {"url": "", "icon": ""},
             {"url": "", "icon": ""},
