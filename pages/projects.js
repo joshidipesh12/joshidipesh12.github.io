@@ -22,7 +22,7 @@ function Projects() {
             {project.p.map((i, k) => (
               <ProjectCard
                 activate={rev => setActive(rev ?? i.title)}
-                key={k}
+                key={`${k}${i.title}`}
                 isActive={activeCard === i.title}
                 item={i}
               />

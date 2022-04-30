@@ -18,7 +18,8 @@
   height: 90rem;
   border: none;
   border-radius: 5px;
-  animation: entry 2s ease-out 1s;
+  animation: entry 2s ease-out 3s;
+  z-index: 2;
 }
 
 @media (max-width: 767px) {
@@ -26,8 +27,7 @@
     padding-inline: 0%;
   }
   .pdf {
-    height: 150vw;
-    min-height: calc(70 * var(--vh));
+    height: clamp(30rem, calc(75 * var(--vh)), 40rem);
     margin-inline: 0%;
   }
 }

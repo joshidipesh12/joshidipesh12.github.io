@@ -65,8 +65,9 @@
 }
 
 .activeCard > .cardImage {
-  height: 10rem;
+  height: calc(20 * var(--vh));
   transform: scale(1.2);
+  margin-bottom: -10%;
 }
 
 @keyframes rotateShadow {
@@ -140,7 +141,7 @@
 
 @media (max-width: 767px) {
   .snapContainer {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: none;
   }
 
   .projectCard:hover > .expand {

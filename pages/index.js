@@ -3,14 +3,15 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import styles from '../styles/Home.module.css';
-import useWindowDimensions from '../hooks/useWindowDimensions';
+import {useIsMobile} from '../hooks';
 import data from '../public/myData.json';
 import Navbar from '../components/Navbar';
 import Bottom from '../components/Bottom';
+import Loader from '../components/Loader';
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
-  const {height, width} = useWindowDimensions();
+  const isMobile = useIsMobile();
 
   return (
     <div className={styles.container}>
@@ -26,7 +27,8 @@ export default function Home() {
       <div className={styles.main}>
         <Navbar containerStyle={{position: 'absolute', top: 0}} />
         <div className={styles.home_first}>
-          <Fade cascade right={width > 767} when={loaded}>
+          <Loader visible={!loaded} />
+          <Fade cascade right={!isMobile} when={loaded}>
             <div className={styles.home_content}>
               <div className={styles.domains}>hi!, i&apos;m</div>
               <div className={`${styles.colorful} ${styles.domains}`}>
@@ -35,7 +37,7 @@ export default function Home() {
               <div className={styles.domains}>a full-stack dev</div>
             </div>
           </Fade>
-          <Fade delay={500} bottom={width < 767} when={loaded}>
+          <Fade delay={500} bottom={isMobile} when={loaded}>
             <div className={styles.my_image}>
               <Image
                 priority={true}
