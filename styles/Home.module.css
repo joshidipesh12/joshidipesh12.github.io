@@ -5,8 +5,8 @@
 
 .main {
   min-height: -webkit-fill-available;
-  height: calc(100 * var(--vh));
   height: 100%;
+  height: calc(75 * var(--vh));
 }
 
 .home_first {
