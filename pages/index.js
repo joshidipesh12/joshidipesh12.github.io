@@ -44,7 +44,8 @@ export default function Home() {
                 layout="fill"
                 objectFit="contain"
                 src="/me.webp"
-                alt="das me!"
+                alt="Image"
+                title="das me!"
                 loading="eager"
                 onLoadingComplete={() => {
                   setLoaded(true);

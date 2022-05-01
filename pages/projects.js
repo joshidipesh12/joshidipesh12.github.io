@@ -65,6 +65,7 @@ const ProjectCard = ({item, activate, isActive = false}) => {
           height="40px"
           width="40px"
           src="/icons/chevron-down.svg"
+          alt="chevron"
         />
       </div>
       <div className={styles.cardImage}>
@@ -75,6 +76,7 @@ const ProjectCard = ({item, activate, isActive = false}) => {
           objectFit="cover"
           priority
           role="img"
+          alt={item.title}
         />
       </div>
       <div className={styles.cardContent}>

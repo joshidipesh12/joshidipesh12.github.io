@@ -15,7 +15,7 @@ function Loader({visible = true}) {
     <div className="container">
       <Fade delay={100} when={visible} duration={200} className="loader">
         <div className="loader">
-          <img src="/favicon.ico" className="logo" />
+          <img alt="logo" src="/favicon.ico" className="logo" />
         </div>
       </Fade>
       <style jsx>{`
