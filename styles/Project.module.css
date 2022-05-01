@@ -45,29 +45,34 @@
   box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.5);
   font-family: 'Poppins', sans-serif;
   z-index: 1;
+  font-size: 1.1rem;
+  border: none;
 }
 
-.projectCard:hover {
+.projectCard:hover,
+.projectCard:focus {
   transform: translateY(-5px);
   box-shadow: 0px 5px 50px 5px rgba(144, 79, 255, 0.3);
   animation: rotateShadow 5s 0.7s ease-out infinite;
   z-index: 2;
 }
 
-.projectCard:hover > .expand {
+.projectCard:hover > .expand,
+.projectCard:focus > .expand {
   display: block;
 }
 
-.activeCard:hover > .expand {
+.activeCard:hover > .expand,
+.activeCard:focus > .expand {
   display: block;
-  transform: rotate(180deg);
-  top: 12rem;
+  transform: rotate(-180deg);
+  top: 82%;
 }
 
 .activeCard > .cardImage {
-  height: calc(20 * var(--vh));
+  height: calc(30 * var(--vh));
   transform: scale(1.2);
-  margin-bottom: -10%;
+  margin-bottom: -8%;
 }
 
 @keyframes rotateShadow {
@@ -104,21 +109,45 @@
 
 .cardTitle,
 .cardDescp {
-  margin-right: 5%;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   text-align: center;
 }
 
-/* REMOVE THIS */
-.cardDescp {
-  height: 100px;
+.cardLinks {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 20%;
+  padding-bottom: 1em;
+}
+
+.cardLink {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  margin-inline: 10%;
+  transition: all 0.2s ease-out;
+}
+.cardLink:hover,
+.cardLink:focus {
+  transform: scale(1.1);
 }
 
 .neonText {
   color: #d2d1d1;
   animation: turnOn 0.7s ease-in 1s forwards;
+}
+
+.expand {
+  display: none;
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 @keyframes turnOn {
@@ -131,21 +160,9 @@
   }
 }
 
-.expand {
-  display: none;
-  position: absolute;
-  top: 10%;
-  right: 3%;
-  cursor: pointer;
-}
-
 @media (max-width: 767px) {
   .snapContainer {
     scroll-snap-type: none;
-  }
-
-  .projectCard:hover > .expand {
-    display: none;
   }
 
   .section {
@@ -181,6 +198,18 @@
     height: 28%;
     transform: scale(1.1);
     overflow: auto;
+  }
+
+  .activeCard > .cardImage {
+    height: calc(20 * var(--vh));
+  }
+
+  .projectCard:hover > .expand {
+    display: block;
+  }
+
+  .activeCard > .expand {
+    margin-top: -1%;
   }
 }
 

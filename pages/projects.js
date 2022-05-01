@@ -1,10 +1,12 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, {useState, useEffect} from 'react';
 import Bottom from '../components/Bottom';
 import Navbar from '../components/Navbar';
 import styles from '../styles/Project.module.css';
 import config from '../public/myData.json';
 import useIsMobile from '../hooks/useIsMobile';
+import {motion} from 'framer-motion';
 
 function Projects() {
   const data = config.projects;
@@ -45,7 +47,7 @@ const ProjectCard = ({item, activate, isActive = false}) => {
   const isMobile = useIsMobile();
 
   return (
-    <div
+    <button
       onContextMenu={e => {
         activate();
         e.preventDefault();
@@ -79,10 +81,29 @@ const ProjectCard = ({item, activate, isActive = false}) => {
         <h2 className={styles.cardTitle}>{item.title}</h2>
         <p className={styles.cardDescp}>{item.subtitle}</p>
         <div className={styles.cardLinks}>
-          {/* <a className={styles.cardLink}></a> */}
+          {item.links.map((link, i) => (
+            <motion.a
+              key={i}
+              className={styles.cardLink}
+              href={link.url}
+              target="_blank"
+              whileHover={{filter: 'drop-shadow(0 0 0.2em #fff)'}}
+              style={{filter: 'invert(1)'}}>
+              <Image
+                alt={link.type}
+                title={link.type}
+                src={`stack/${link.icon}`}
+                priority
+                role="link"
+                layout="fill"
+                draggable="false"
+                objectFit="contain"
+              />
+            </motion.a>
+          ))}
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 

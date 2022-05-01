@@ -18,7 +18,8 @@
   height: 90rem;
   border: none;
   border-radius: 5px;
-  animation: entry 2s ease-out 3s;
+  background-color: #00000000;
+  animation: entry 1s ease-out 5s;
   z-index: 2;
 }
 
