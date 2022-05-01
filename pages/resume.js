@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-import Bottom from '../components/Bottom';
-import Loader from '../components/Loader';
-import Navbar from '../components/Navbar';
+import {Head, Bottom, Loader, Navbar} from '../components';
 import styles from '../styles/Resume.module.css';
 
 function Resume() {
@@ -9,6 +7,7 @@ function Resume() {
 
   return (
     <div className={styles.main}>
+      <Head title="Resume" />
       <Navbar containerStyle={{position: 'sticky', top: 0}} />
       <Loader visible={loading} />
       <div className={styles.resume}>

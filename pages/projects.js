@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, {useState, useEffect} from 'react';
-import Bottom from '../components/Bottom';
-import Navbar from '../components/Navbar';
+import {Head, Bottom, Navbar} from '../components';
 import styles from '../styles/Project.module.css';
 import config from '../public/myData.json';
 import useIsMobile from '../hooks/useIsMobile';
@@ -14,6 +13,7 @@ function Projects() {
 
   return (
     <div className={styles.snapContainer}>
+      <Head title="Projects" />
       <Navbar containerStyle={{position: 'absolute', top: 0}} />
       {data.map((project, index) => (
         <div key={index} className={styles.section}>

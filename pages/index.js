@@ -1,13 +1,10 @@
 import {useState} from 'react';
-import Head from 'next/head';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import styles from '../styles/Home.module.css';
 import {useIsMobile} from '../hooks';
 import data from '../public/myData.json';
-import Navbar from '../components/Navbar';
-import Bottom from '../components/Bottom';
-import Loader from '../components/Loader';
+import {Head, Navbar, Bottom, Loader} from '../components';
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -15,15 +12,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Hola amigos ✨🎀</title>
-        <meta name="description" content="Hi there, I'm Dipesh" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <Head />
       <div className={styles.main}>
         <Navbar containerStyle={{position: 'absolute', top: 0}} />
         <div className={styles.home_first}>
