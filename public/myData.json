@@ -39,7 +39,7 @@
             },
             {
               "url": "http://drivey.co.in/",
-              "icon": "link.svg",
+              "icon": "web.svg",
               "type": "Website"
             }
           ]
@@ -56,7 +56,7 @@
             },
             {
               "url": "http://nalandabazaar.com/",
-              "icon": "link.svg",
+              "icon": "web.svg",
               "type": "Website"
             }
           ]
@@ -73,7 +73,7 @@
             },
             {
               "url": "https://www.dtodservice.com/",
-              "icon": "link.svg",
+              "icon": "web.svg",
               "type": "Website"
             }
           ]
@@ -90,12 +90,12 @@
           "links": [
             {
               "url": "https://travming.vercel.app",
-              "icon": "link.svg",
+              "icon": "web.svg",
               "type": "Website"
             },
             {
               "url": "https://github.com/joshidipesh12/travming-website",
-              "icon": "source.svg",
+              "icon": "github.svg",
               "type": "Source Code"
             },
             {
@@ -111,18 +111,13 @@
           "image": "/images/animeapis.png",
           "links": [
             {
-              "url": "https://animeapis.herokuapp.com/v1/yourAvatar",
-              "icon": "link.svg",
-              "type": "Website: API 2"
-            },
-            {
               "url": "https://github.com/joshidipesh12/your-anime-apis",
               "icon": "github.svg",
               "type": "Source Code"
             },
             {
               "url": "https://animeapis.herokuapp.com/",
-              "icon": "link.svg",
+              "icon": "web.svg",
               "type": "Home Website"
             }
           ]
@@ -134,7 +129,7 @@
           "links": [
             {
               "url": "https://github.com/joshidipesh12/chakravyuh-server-ducs22",
-              "icon": "source.svg",
+              "icon": "github.svg",
               "type": "Source"
             }
           ]
@@ -163,7 +158,7 @@
           "links": [
             {
               "url": "https://gitlab.com/joshidipesh12/weatherapp-reactnative",
-              "icon": "source.svg",
+              "icon": "github.svg",
               "type": "Source"
             },
             {
@@ -212,7 +207,7 @@
             },
             {
               "url": "http://cs.du.ac.in/students/student-activities/srijan/",
-              "icon": "link.svg",
+              "icon": "web.svg",
               "type": "Magazine"
             }
           ]
@@ -224,7 +219,7 @@
           "links": [
             {
               "url": "https://github.com/joshidipesh12/frontend-poison-snippets",
-              "icon": "source.svg",
+              "icon": "github.svg",
               "type": "Code"
             }
           ]
