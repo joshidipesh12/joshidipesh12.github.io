@@ -7,7 +7,7 @@
 }
 
 .section {
-  height: calc(100 * var(--vh));
+  min-height: calc(100 * var(--vh));
   padding-top: calc(10 * var(--vh));
   scroll-snap-align: start;
   width: 100%;
@@ -23,6 +23,7 @@
   margin-bottom: 0%;
   text-transform: uppercase;
   z-index: 0;
+  font-size: 6vw;
 }
 
 .content {
@@ -35,12 +36,11 @@
 .projectCard {
   background-color: rgb(7, 7, 7);
   color: white;
-  width: 25vw;
+  width: 35vw;
   border-radius: 15px;
   overflow: hidden;
   overflow-y: scroll;
-  margin-inline: 1%;
-  margin-block: 1%;
+  margin: 1%;
   transition: all 0.4s ease;
   box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.5);
   font-family: 'Poppins', sans-serif;
@@ -72,7 +72,6 @@
 .activeCard > .cardImage {
   height: calc(30 * var(--vh));
   transform: scale(1.2);
-  margin-bottom: -8%;
 }
 
 @keyframes rotateShadow {
@@ -131,11 +130,12 @@
 
 .cardLink {
   position: relative;
-  height: 2rem;
-  width: 2rem;
+  height: 2vw;
+  width: 2vw;
   margin-inline: 10%;
   transition: all 0.2s ease-out;
 }
+
 .cardLink:hover,
 .cardLink:focus {
   transform: scale(1.1);
@@ -143,7 +143,7 @@
 
 .neonText {
   color: #d2d1d1;
-  animation: turnOn 0.7s ease-in 1s forwards;
+  animation: turnOn 1s ease-in 0.5s forwards;
 }
 
 .expand {
@@ -153,6 +153,7 @@
   right: 5%;
   cursor: pointer;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
 @keyframes turnOn {
@@ -160,8 +161,8 @@
   }
   100% {
     color: #fff;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00fbff,
-      0 0 82px #00fbff, 0 0 92px #00fbff, 0 0 102px #00fbff, 0 0 151px #00fbff;
+    text-shadow: 0 0 1px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00fbff,
+      0 0 50px #00fbff, 0 0 70px #00fbff, 0 0 80px #00fbff, 0 0 120px #00fbff;
   }
 }
 
@@ -192,29 +193,35 @@
   .projectCard {
     width: 80vw;
     cursor: auto;
-    margin-block: 0vh;
+    margin-top: 5vw;
     background-color: rgb(24, 24, 24);
-    max-height: 30%;
+    height: 50vw;
     overflow: hidden;
+    font-size: 4.5vw;
   }
 
   .projectCard:active,
   .projectCard:focus {
-    height: 28%;
     transform: scale(1.1);
     overflow: auto;
   }
 
   .activeCard > .cardImage {
-    height: calc(20 * var(--vh));
+    height: calc(23 * var(--vh));
   }
 
   .projectCard:hover > .expand {
     display: block;
+    margin-top: -2%;
   }
 
   .activeCard > .expand {
-    margin-top: -1%;
+    margin-top: -5%;
+  }
+
+  .cardLink {
+    height: 10vw;
+    width: 10vw;
   }
 }
 
