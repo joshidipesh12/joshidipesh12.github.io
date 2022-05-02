@@ -89,7 +89,7 @@ const ProjectCard = ({item, activate, isActive = false}) => {
               className={styles.cardLink}
               href={link.url}
               target="_blank"
-              whileHover={{filter: 'drop-shadow(0 0 0.2em #fff)'}}
+              whileHover={{filter: 'invert(1) drop-shadow(0 0 0.2em #fff)'}}
               style={{filter: 'invert(1)'}}>
               <Image
                 alt={link.type}
