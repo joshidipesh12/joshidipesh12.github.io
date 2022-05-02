@@ -36,6 +36,7 @@ export default function Home() {
                 alt="Image"
                 title="das me!"
                 loading="eager"
+                sizes="50vw"
                 onLoadingComplete={() => {
                   setLoaded(true);
                 }}
