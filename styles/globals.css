@@ -13,7 +13,7 @@ body {
   -ms-user-select: none;
   background-color: black;
 }
-
+/* 
 html > * {
   opacity: 0;
   animation: fade-in 0.7s ease-out 0.5s forwards;
@@ -26,7 +26,7 @@ html > * {
   to {
     opacity: 1;
   }
-}
+} */
 
 ::-webkit-scrollbar {
   display: none;

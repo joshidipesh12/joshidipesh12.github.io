@@ -1,10 +1,22 @@
 import '../styles/globals.css';
 import {useEffect} from 'react';
+import {motion, AnimatePresence} from 'framer-motion';
 
-function MyApp({Component, pageProps}) {
+function MyApp({Component, pageProps, router}) {
   useEffect(resize, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <AnimatePresence exitBeforeEnter>
+      <motion.div
+        key={router.route}
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        transition={{duration: 1}}>
+        <Component {...pageProps} />
+      </motion.div>
+    </AnimatePresence>
+  );
 }
 
 export default MyApp;
