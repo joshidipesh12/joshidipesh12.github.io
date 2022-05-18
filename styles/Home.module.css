@@ -77,17 +77,16 @@
   .home_first {
     padding-inline: 0;
     justify-content: center;
-    height: calc(75 * var(--vh));
+    height: calc(80 * var(--vh));
   }
 
   .my_image {
     width: 40vw;
     min-width: 15rem;
-    height: 50%;
+    height: 60%;
   }
 
   .home_content {
-    /* display: flex; */
     align-items: center;
   }
 

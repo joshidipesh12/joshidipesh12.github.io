@@ -6,13 +6,12 @@ function MyApp({Component, pageProps, router}) {
   useEffect(resize, []);
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence key={router.route} exitBeforeEnter>
       <motion.div
         key={router.route}
         initial={{opacity: 0}}
         animate={{opacity: 1}}
-        exit={{opacity: 0}}
-        transition={{duration: 1}}>
+        exit={{opacity: 0}}>
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>
@@ -22,16 +21,18 @@ function MyApp({Component, pageProps, router}) {
 export default MyApp;
 
 const resize = () => {
-  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
   let vh = window?.innerHeight * 0.01;
-  // Then we set the value in the --vh custom property to the root of the document
   document?.documentElement?.style?.setProperty?.('--vh', `${vh}px`);
 
-  // window?.addEventListener('resize', () => {
-  //   // We execute the same script as before
-  //   let vh = window?.innerHeight * 0.01;
-  //   document?.documentElement?.style?.setProperty?.('--vh', `${vh}px`);
-  // });
+  window?.addEventListener('resize', () => {
+    // We execute the same script as before
+    let vh1 = window?.innerHeight * 0.01;
+
+    if (Math.abs(vh1 - vh) > 0.4) {
+      document?.documentElement?.style?.setProperty?.('--vh', `${vh1}px`);
+      vh = vh1;
+    }
+  });
 
   return () => {};
 };
