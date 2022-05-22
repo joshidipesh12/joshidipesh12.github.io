@@ -9,9 +9,9 @@ function MyApp({Component, pageProps, router}) {
     <AnimatePresence exitBeforeEnter>
       <motion.div
         key={router.route}
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}>
+        initial={{opacity: 0, transform: 'translateY(30px)'}}
+        animate={{opacity: 1, transform: 'translateY(0px)'}}
+        exit={{opacity: 0, transform: 'translateY(-30px)'}}>
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>
