@@ -33,13 +33,10 @@ export default function Home() {
                 layout="fill"
                 objectFit="contain"
                 src="/me.webp"
-                alt="Image"
+                alt="My Image"
                 title="das me!"
-                loading="eager"
                 sizes="(max-width: 710px) 30vh, 30vw"
-                onLoadingComplete={() => {
-                  setLoaded(true);
-                }}
+                onLoadingComplete={() => setLoaded(true)}
               />
             </div>
           </Fade>
