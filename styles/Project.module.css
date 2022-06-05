@@ -178,11 +178,11 @@
   .content {
     flex-wrap: wrap;
     height: 78%;
-    margin-top: 5%;
+    margin-top: 15%;
   }
 
   .sectionHead {
-    top: calc(12 * var(--vh));
+    top: calc(15 * var(--vh));
   }
 
   .neonText {

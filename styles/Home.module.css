@@ -81,9 +81,9 @@
   }
 
   .my_image {
-    width: 40vw;
-    min-width: 15rem;
+    width: 70vw;
     height: 60%;
+    min-width: 15rem;
   }
 
   .home_content {

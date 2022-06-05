@@ -18,7 +18,7 @@
   height: 90rem;
   border: none;
   border-radius: 5px;
-  background-color: #00000000;
+  background-color: transparent;
   animation: entry 1s ease-out 5s;
   z-index: 2;
 }
@@ -28,8 +28,10 @@
     padding-inline: 0%;
   }
   .pdf {
-    height: clamp(30rem, calc(75 * var(--vh)), 40rem);
+    height: clamp(30rem, calc(105 * var(--vh)), 50rem);
     margin-inline: 0%;
+    border-radius: 0;
+    margin-top: 1vh;
   }
 }
 

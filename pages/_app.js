@@ -1,14 +1,26 @@
 import '../styles/globals.css';
 import {useEffect} from 'react';
-import {motion, AnimatePresence} from 'framer-motion';
+import {motion, AnimatePresence, useAnimation} from 'framer-motion';
 
 function MyApp({Component, pageProps, router}) {
-  useEffect(resize, []);
+  const controls = useAnimation();
+
+  useEffect(() => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {
+      let vh1 = window.innerHeight * 0.01;
+      controls.start({'--vh': vh1});
+      vh = vh1;
+    });
+  }, []);
 
   return (
     <AnimatePresence exitBeforeEnter>
       <motion.div
+        layout
         key={router.route}
+        transition={{when: 'afterChildren'}}
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         exit={{opacity: 0}}>
@@ -19,20 +31,3 @@ function MyApp({Component, pageProps, router}) {
 }
 
 export default MyApp;
-
-const resize = () => {
-  let vh = window?.innerHeight * 0.01;
-  document?.documentElement?.style?.setProperty?.('--vh', `${vh}px`);
-
-  window?.addEventListener('resize', () => {
-    // We execute the same script as before
-    let vh1 = window?.innerHeight * 0.01;
-
-    if (Math.abs(vh1 - vh) > 0.6) {
-      document?.documentElement?.style?.setProperty?.('--vh', `${vh1}px`);
-      vh = vh1;
-    }
-  });
-
-  return () => {};
-};
