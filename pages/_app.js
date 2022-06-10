@@ -4,24 +4,26 @@ import {motion, AnimatePresence} from 'framer-motion';
 
 function MyApp({Component, pageProps, router}) {
   useEffect(() => {
-    document.documentElement.style.setProperty(
-      '--vh',
-      `${window.innerHeight * 0.01}px`,
-    );
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
     window.addEventListener('resize', () => {
-      document.documentElement.style.setProperty(
-        '--vh',
-        `${window.innerHeight * 0.01}px`,
-      );
+      let vh1 = window.innerHeight * 0.01,
+        diff = vh1 - vh;
+      for (
+        let i = 0;
+        Math.abs(i) <= Math.abs(diff);
+        i = diff > 0 ? i + 0.1 : i - 0.1
+      ) {
+        console.log('here');
+        document.documentElement.style.setProperty('--vh', `${vh + i}px`);
+      }
     });
   }, []);
 
   return (
     <AnimatePresence exitBeforeEnter>
       <motion.div
-        layout
         key={router.route}
-        transition={{}}
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         exit={{opacity: 0}}>
