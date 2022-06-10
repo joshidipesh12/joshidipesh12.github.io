@@ -23,15 +23,15 @@
   z-index: 2;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 420px) {
   .resume {
     padding-inline: 0%;
   }
   .pdf {
-    height: clamp(30rem, calc(105 * var(--vh)), 50rem);
+    height: clamp(30rem, calc(90 * var(--vh)), 60rem);
     margin-inline: 0%;
     border-radius: 0;
-    margin-top: 1vh;
+    margin-top: 0.1vh;
   }
 }
 
