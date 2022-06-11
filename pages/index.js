@@ -30,7 +30,8 @@ export default function Home() {
             <div className={styles.my_image}>
               <Image
                 priority={true}
-                layout="fill"
+                height="100%"
+                width="100%"
                 objectFit="contain"
                 src="/me.webp"
                 alt="My Image"
@@ -45,10 +46,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com"
-          target="_blank"
-          rel="noopener noreferrer">
+        <a href="https://vercel.com" target="_blank" rel="noopener noreferrer">
           Powered by{' '}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />

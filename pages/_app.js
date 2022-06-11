@@ -6,18 +6,10 @@ function MyApp({Component, pageProps, router}) {
   useEffect(() => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    window.addEventListener('resize', () => {
-      let vh1 = window.innerHeight * 0.01,
-        diff = vh1 - vh;
-      for (
-        let i = 0;
-        Math.abs(i) <= Math.abs(diff);
-        i = diff > 0 ? i + 0.1 : i - 0.1
-      ) {
-        console.log('here');
-        document.documentElement.style.setProperty('--vh', `${vh + i}px`);
-      }
-    });
+    // window.addEventListener('resize', () => {
+    //   vh = window.innerHeight * 0.01;
+    //   document.documentElement.style.setProperty('--vh', `${vh}px`);
+    // });
   }, []);
 
   return (
