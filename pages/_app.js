@@ -6,10 +6,22 @@ function MyApp({Component, pageProps, router}) {
   useEffect(() => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    // window.addEventListener('resize', () => {
-    //   vh = window.innerHeight * 0.01;
-    //   document.documentElement.style.setProperty('--vh', `${vh}px`);
-    // });
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js').then(
+          function (registration) {
+            console.log(
+              'Service Worker registration successful with scope: ',
+              registration.scope,
+            );
+          },
+          function (err) {
+            console.log('Service Worker registration failed: ', err);
+          },
+        );
+      });
+    }
   }, []);
 
   return (

@@ -30,8 +30,7 @@ export default function Home() {
             <div className={styles.my_image}>
               <Image
                 priority={true}
-                height="100%"
-                width="100%"
+                layout="fill"
                 objectFit="contain"
                 src="/me.webp"
                 alt="My Image"
