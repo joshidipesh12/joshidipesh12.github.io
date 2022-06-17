@@ -143,6 +143,7 @@
 
 .neonText {
   color: #d2d1d1;
+  font-family: 'Poppins', sans-serif;
   animation: turnOn 1s ease-in 0.5s forwards;
 }
 
@@ -169,10 +170,12 @@
 @media (max-width: 420px) {
   .snapContainer {
     scroll-snap-type: none;
+    padding-top: calc(15 * var(--vh));
   }
 
   .section {
     scroll-snap-align: center;
+    padding-top: 0;
   }
 
   .content {
@@ -182,7 +185,7 @@
   }
 
   .sectionHead {
-    top: calc(15 * var(--vh));
+    top: 0vh;
     font-size: 10vw;
     padding-inline: 10%;
     line-height: 160%;
