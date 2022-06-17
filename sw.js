@@ -6,6 +6,7 @@ try {
   const PRECACHE_URLS = [
     `/`, // Alias for index.html
     `/projects`,
+    `/resume`,
   ];
 
   // The install handler takes care of precaching the resources we always need.
