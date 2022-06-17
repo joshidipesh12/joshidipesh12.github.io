@@ -183,6 +183,9 @@
 
   .sectionHead {
     top: calc(15 * var(--vh));
+    font-size: 10vw;
+    padding-inline: 10%;
+    line-height: 160%;
   }
 
   .neonText {

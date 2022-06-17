@@ -7,9 +7,6 @@ try {
     `/`, // Alias for index.html
     `/projects`,
     `/resume`,
-    `/icons`,
-    `/images`,
-    `/stacks`,
   ];
 
   // The install handler takes care of precaching the resources we always need.
