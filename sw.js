@@ -27,9 +27,10 @@ try {
       caches
         .keys()
         .then(cacheNames => {
-          return cacheNames.filter(
-            cacheName => !currentCaches.includes(cacheName),
-          );
+          return cacheNames
+          // .filter(
+          //   cacheName => !currentCaches.includes(cacheName),
+          // );
         })
         .then(cachesToDelete => {
           console.log('deleting old cache');
