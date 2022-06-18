@@ -21,7 +21,7 @@ export default function useIsMobile() {
       checkIsMobile(navigator?.userAgent || navigator?.vendor || window?.opera),
     );
     return () => {};
-  }, [navigator?.userAgent, navigator?.vendor, window?.opera]);
+  }, []);
 
   return isMobile;
 }

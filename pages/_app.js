@@ -8,11 +8,8 @@ function MyApp({Component, pageProps, router}) {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/sw.js').then(
-          res => {},
-          err => console.log('Service Worker registration failed: ', err),
-        );
+      window.addEventListener('load', async function () {
+        await navigator.serviceWorker.register('/sw.js');
       });
     }
   }, []);
@@ -21,9 +18,9 @@ function MyApp({Component, pageProps, router}) {
     <AnimatePresence exitBeforeEnter>
       <motion.div
         key={router.route}
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        exit={{opacity: 0}}>
+        initial={{scale: 0, opacity: 0}}
+        animate={{scale: 1, opacity: 1}}
+        exit={{scale: 2, opacity: 0}}>
         <Component {...pageProps} />
       </motion.div>
     </AnimatePresence>

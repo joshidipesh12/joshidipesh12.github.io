@@ -78,32 +78,34 @@ const ProjectCard = ({item, activate, isActive = false}) => {
           alt={item.title}
         />
       </div>
-      <div className={styles.cardContent}>
-        <h2 className={styles.cardTitle}>{item.title}</h2>
-        <p className={styles.cardDescp}>{item.subtitle}</p>
-        <div className={styles.cardLinks}>
-          {item.links.map((link, i) => (
-            <motion.a
-              key={i}
-              className={styles.cardLink}
-              href={link.url}
-              target="_blank"
-              whileHover={{filter: 'invert(1) drop-shadow(0 0 0.2em #fff)'}}
-              style={{filter: 'invert(1)'}}>
-              <Image
-                alt={link.type}
-                title={link.type}
-                src={`stack/${link.icon}`}
-                priority
-                role="link"
-                layout="fill"
-                draggable="false"
-                objectFit="contain"
-              />
-            </motion.a>
-          ))}
+      {!isActive ? (
+        <div className={styles.cardContent}>
+          <h2 className={styles.cardTitle}>{item.title}</h2>
+          <p className={styles.cardDescp}>{item.subtitle}</p>
+          <div className={styles.cardLinks}>
+            {item.links.map((link, i) => (
+              <motion.a
+                key={i}
+                className={styles.cardLink}
+                href={link.url}
+                target="_blank"
+                whileHover={{filter: 'invert(1) drop-shadow(0 0 0.2em #fff)'}}
+                style={{filter: 'invert(1)'}}>
+                <Image
+                  alt={link.type}
+                  title={link.type}
+                  src={`stack/${link.icon}`}
+                  priority
+                  role="link"
+                  layout="fill"
+                  draggable="false"
+                  objectFit="contain"
+                />
+              </motion.a>
+            ))}
+          </div>
         </div>
-      </div>
+      ) : null}
     </button>
   );
 };

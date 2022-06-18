@@ -23,7 +23,7 @@
   z-index: 2;
 }
 
-@media (max-width: 420px) {
+@media (max-aspect-ratio: 2/3) {
   .resume {
     padding-inline: 0%;
   }

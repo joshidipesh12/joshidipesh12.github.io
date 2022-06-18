@@ -57,6 +57,11 @@
   z-index: 2;
 }
 
+.projectCard + .activeCard:hover {
+  z-index: 3;
+  transform: scale(1.2);
+}
+
 .projectCard:hover > .expand,
 .projectCard:focus > .expand {
   display: block;
@@ -70,8 +75,8 @@
 }
 
 .activeCard > .cardImage {
-  height: calc(30 * var(--vh));
-  transform: scale(1.2);
+  height: calc(40 * var(--vh));
+  transform: scale(1.1);
 }
 
 @keyframes rotateShadow {
@@ -167,7 +172,7 @@
   }
 }
 
-@media (max-width: 420px) {
+@media (max-aspect-ratio: 2/3) {
   .snapContainer {
     scroll-snap-type: none;
     padding-top: calc(15 * var(--vh));

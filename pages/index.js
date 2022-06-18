@@ -41,7 +41,7 @@ export default function Home() {
             </div>
           </Fade>
         </div>
-        <Bottom containerStyle={{position: 'absolute', bottom: 0}} />
+        <Bottom />
       </div>
 
       <footer className={styles.footer}>
