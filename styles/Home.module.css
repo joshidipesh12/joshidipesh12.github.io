@@ -73,7 +73,7 @@
   margin-left: 0.5rem;
 }
 
-@media (max-aspect-ratio: 2/3) {
+@media (max-aspect-ratio: 4/5) {
   .home_first {
     padding-inline: 0;
     justify-content: center;

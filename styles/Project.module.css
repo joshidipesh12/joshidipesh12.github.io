@@ -16,7 +16,6 @@
 }
 
 .sectionHead {
-  color: aliceblue;
   position: sticky;
   top: 15vh;
   text-align: center;
@@ -24,6 +23,8 @@
   text-transform: uppercase;
   z-index: 0;
   font-size: 6vw;
+  color: #d2d1d1;
+  font-family: 'Poppins', sans-serif;
 }
 
 .content {
@@ -35,11 +36,9 @@
 
 .projectCard {
   background-color: rgb(7, 7, 7);
-  color: white;
   width: 35vw;
   border-radius: 15px;
   overflow: hidden;
-  overflow-y: scroll;
   margin: 1%;
   transition: all 0.4s ease;
   box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.5);
@@ -51,6 +50,7 @@
 
 .projectCard:hover,
 .projectCard:focus {
+  color: white;
   transform: translateY(-5px);
   box-shadow: 0px 5px 50px 5px rgba(144, 79, 255, 0.3);
   animation: rotateShadow 5s 0.7s ease-out infinite;
@@ -70,9 +70,13 @@
   top: 80%;
 }
 
+.activeCard {
+  z-index: 3;
+}
+
 .activeCard > .cardImage {
   height: calc(40 * var(--vh));
-  transform: scale(1.2);
+  transform: scale(1.35);
 }
 
 @keyframes rotateShadow {
@@ -142,12 +146,6 @@
   transform: scale(1.1);
 }
 
-.neonText {
-  color: #d2d1d1;
-  font-family: 'Poppins', sans-serif;
-  animation: turnOn 1s ease-in 0.5s forwards;
-}
-
 .expand {
   display: none;
   position: absolute;
@@ -156,6 +154,10 @@
   cursor: pointer;
   transition: all 0.3s ease;
   z-index: 2;
+}
+
+.neonText {
+  animation: turnOn 1s ease-in 0.5s forwards;
 }
 
 @keyframes turnOn {
@@ -168,7 +170,7 @@
   }
 }
 
-@media (max-aspect-ratio: 2/3) {
+@media (max-aspect-ratio: 4/5) {
   .snapContainer {
     scroll-snap-type: none;
     padding-top: calc(15 * var(--vh));

@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import {Head, Bottom, Navbar} from '../components';
 import styles from '../styles/Project.module.css';
 import config from '../public/myData.json';
-import useIsMobile from '../hooks/useIsMobile';
+import {useIsMobile} from '../hooks';
 import {motion} from 'framer-motion';
 
 function Projects() {
