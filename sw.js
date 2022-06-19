@@ -27,10 +27,10 @@ try {
       caches
         .keys()
         .then(cacheNames => {
-          return cacheNames
-          // .filter(
-          //   cacheName => !currentCaches.includes(cacheName),
-          // );
+          const isOffline = !(window?.navigator?.onLine ?? true);
+          return cacheNames.filter(
+            cacheName => !isOffline || !currentCaches.includes(cacheName),
+          );
         })
         .then(cachesToDelete => {
           console.log('deleting old cache');
@@ -44,7 +44,7 @@ try {
     );
   });
 
-  // The fetch handler serves responses for same-      	origin resources from a cache.
+  // The fetch handler serves responses for same-origin resources from a cache.
   // If no response is found, it populates the runtime cache with the response
   // from the network before returning it to the page.
   self.addEventListener('fetch', event => {
