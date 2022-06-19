@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head />
+      <Navbar containerStyle={{position: 'absolute', top: 0}} />
       <div className={styles.main}>
-        <Navbar containerStyle={{position: 'absolute', top: 0}} />
         <div className={styles.home_first}>
           <Loader visible={!loaded} />
           <Fade cascade right={!isMobile} when={loaded}>

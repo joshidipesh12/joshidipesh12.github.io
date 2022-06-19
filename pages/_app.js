@@ -8,8 +8,8 @@ function MyApp({Component, pageProps, router}) {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', async function () {
-        await navigator.serviceWorker.register('/sw.js');
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js');
       });
     }
   }, []);
@@ -18,11 +18,11 @@ function MyApp({Component, pageProps, router}) {
     <AnimatePresence exitBeforeEnter>
       <motion.div
         key={router.route}
-        transition={{duration: 4, when: 'afterChildren'}}
+        transition={{duration: 0.3, ease: 'linear', when: 'beforeChildren'}}
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         exit={{opacity: 0}}>
-        <Component {...pageProps} />
+        <Component key={router.route} {...pageProps} />
       </motion.div>
     </AnimatePresence>
   );
