@@ -13,13 +13,16 @@ function MyApp({Component, pageProps, router}) {
   }, []);
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence
+      initial={false}
+      presenceAffectsLayout
+      exitBeforeEnter={true}>
       <motion.div
         key={router.route}
-        transition={{duration: 1.2, easings: 'circOut'}}
-        initial={{opacity: 0}}
-        animate={{opacity: 1}}
-        exit={{translateY: '100%'}}>
+        transition={{duration: 10.2, easings: 'circOut'}}
+        initial={{opacity: 0, translateY: 0, display: 'flex'}}
+        animate={{opacity: 1, translateY: 0, display: 'flex'}}
+        exit={{opacity: 1, translateY: '100%', display: 'flex'}}>
         <Component key={router.route} {...pageProps} />
       </motion.div>
     </AnimatePresence>
