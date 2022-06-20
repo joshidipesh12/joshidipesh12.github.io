@@ -6,7 +6,4 @@ module.exports = {
   },
   basePath: '',
   assetPrefix: '/',
-  optimization: {
-    runtimeChunk: 'single',
-  },
 };

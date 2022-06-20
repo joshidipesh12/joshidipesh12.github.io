@@ -7,21 +7,18 @@ function MyApp({Component, pageProps, router}) {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js');
-      });
-    }
+    if ('serviceWorker' in navigator)
+      navigator.serviceWorker.register('/sw.js');
   }, []);
 
   return (
     <AnimatePresence exitBeforeEnter>
       <motion.div
         key={router.route}
-        transition={{duration: 0.3, ease: 'linear', when: 'beforeChildren'}}
+        transition={{duration: 1.2, easings: 'circOut'}}
         initial={{opacity: 0}}
         animate={{opacity: 1}}
-        exit={{opacity: 0}}>
+        exit={{translateY: '100%'}}>
         <Component key={router.route} {...pageProps} />
       </motion.div>
     </AnimatePresence>

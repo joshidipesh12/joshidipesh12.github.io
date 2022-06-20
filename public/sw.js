@@ -4,9 +4,30 @@ try {
 
   // A list of local resources we always want to be cached.
   const PRECACHE_URLS = [
-    `/`, // Alias for index.html
-    `/projects`,
-    `/resume`,
+    `public/favicon.ico`,
+    `public/me.webp`,
+    `public/myData.json`,
+    `public/screenshot.png`,
+    `public/vercel.svg`,
+    `public/icons/chevron-down.svg`,
+    `public/icons/link.svg`,
+    `public/icons/vercel.ico`,
+    `public/images/4runners.png`,
+    `public/images/animeapis.png`,
+    `public/images/deepfake.webp`,
+    `public/images/door2door.png`,
+    `public/images/drivey.png`,
+    `public/images/express_mongodb.png`,
+    `public/images/nalanda.png`,
+    `public/images/poison.png`,
+    `public/images/posters.png`,
+    `public/images/thoughtboard.png`,
+    `public/images/travming.png`,
+    `public/images/weatherapp.png`,
+    `public/stack/github.svg`,
+    `public/stack/figma.svg`,
+    `public/stack/web.svg`,
+    `public/stack/store.svg`,
   ];
 
   // The install handler takes care of precaching the resources we always need.
@@ -27,9 +48,8 @@ try {
       caches
         .keys()
         .then(cacheNames => {
-          const isOffline = !(window?.navigator?.onLine ?? true);
           return cacheNames.filter(
-            cacheName => !isOffline || !currentCaches.includes(cacheName),
+            cacheName => !currentCaches.includes(cacheName),
           );
         })
         .then(cachesToDelete => {
@@ -69,5 +89,5 @@ try {
     }
   });
 } catch (e) {
-  console.log(e);
+  console.log('Error: ', e);
 }
