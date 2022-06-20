@@ -7,8 +7,9 @@ function MyApp({Component, pageProps, router}) {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    if ('serviceWorker' in navigator)
+    if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js');
+    }
   }, []);
 
   return (
