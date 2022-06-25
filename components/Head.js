@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-function HeadTag({title}) {
+function HeadTag({title, children}) {
   return (
     <Head>
       <title>{title ? `${title} - ` : ''}Hola amigos ✨🎀</title>
@@ -23,6 +23,7 @@ function HeadTag({title}) {
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content="website" />
       <link rel="icon" href="/favicon.ico" />
+      {children}
     </Head>
   );
 }

@@ -170,6 +170,12 @@
   }
 }
 
+.comingsoon {
+  align-self: center;
+  filter: none;
+  transform: rotateZ(355deg);
+}
+
 @media (max-aspect-ratio: 4/5) {
   .snapContainer {
     scroll-snap-type: none;
