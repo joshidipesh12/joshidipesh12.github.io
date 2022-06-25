@@ -25,62 +25,6 @@
   ],
   "projects": [
     {
-      "title": "Mobile Applications",
-      "p": [
-        {
-          "title": "Drivey Rider",
-          "subtitle": "Parking Automation by ParkEz",
-          "image": "/images/drivey.png",
-          "links": [
-            {
-              "url": "https://play.google.com/store/apps/details?id=com.parkezrider",
-              "icon": "store.svg",
-              "type": "App Store"
-            },
-            {
-              "url": "http://drivey.co.in/",
-              "icon": "web.svg",
-              "type": "Website"
-            }
-          ]
-        },
-        {
-          "title": "Nalanda Bazaar",
-          "subtitle": "Online Electronics Store",
-          "image": "/images/nalanda.png",
-          "links": [
-            {
-              "url": "https://play.google.com/store/apps/details?id=com.nalandabazar",
-              "icon": "store.svg",
-              "type": "App Store"
-            },
-            {
-              "url": "http://nalandabazaar.com/",
-              "icon": "web.svg",
-              "type": "Website"
-            }
-          ]
-        },
-        {
-          "title": "Door - 2 - Door",
-          "subtitle": "UI/UX for Groceries App",
-          "image": "/images/door2door.png",
-          "links": [
-            {
-              "url": "https://github.com/joshidipesh12/door2door-groceries",
-              "icon": "github.svg",
-              "type": "Source"
-            },
-            {
-              "url": "https://www.dtodservice.com/",
-              "icon": "web.svg",
-              "type": "Website"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "title": "Web Development",
       "p": [
         {
@@ -131,6 +75,62 @@
               "url": "https://github.com/joshidipesh12/chakravyuh-server-ducs22",
               "icon": "github.svg",
               "type": "Source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mobile Applications",
+      "p": [
+        {
+          "title": "Drivey Rider",
+          "subtitle": "Parking Automation by ParkEz",
+          "image": "/images/drivey.png",
+          "links": [
+            {
+              "url": "https://play.google.com/store/apps/details?id=com.parkezrider",
+              "icon": "store.svg",
+              "type": "App Store"
+            },
+            {
+              "url": "http://drivey.co.in/",
+              "icon": "web.svg",
+              "type": "Website"
+            }
+          ]
+        },
+        {
+          "title": "Nalanda Bazaar",
+          "subtitle": "Online Electronics Store",
+          "image": "/images/nalanda.png",
+          "links": [
+            {
+              "url": "https://play.google.com/store/apps/details?id=com.nalandabazar",
+              "icon": "store.svg",
+              "type": "App Store"
+            },
+            {
+              "url": "http://nalandabazaar.com/",
+              "icon": "web.svg",
+              "type": "Website"
+            }
+          ]
+        },
+        {
+          "title": "Door - 2 - Door",
+          "subtitle": "UI/UX for Groceries App",
+          "image": "/images/door2door.png",
+          "links": [
+            {
+              "url": "https://github.com/joshidipesh12/door2door-groceries",
+              "icon": "github.svg",
+              "type": "Source"
+            },
+            {
+              "url": "https://www.dtodservice.com/",
+              "icon": "web.svg",
+              "type": "Website"
             }
           ]
         }
