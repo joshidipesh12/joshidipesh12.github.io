@@ -17,13 +17,14 @@ export default function Home() {
       <div className={styles.main}>
         <div className={styles.home_first}>
           <Loader visible={!loaded} />
-          <Fade cascade right={!isMobile} when={loaded}>
+          <Fade cascade when={loaded}>
             <div className={styles.home_content}>
-              <div className={styles.domains}>hi!, i&apos;m</div>
-              <div className={`${styles.colorful} ${styles.domains}`}>
+              <div className={`${styles.domains}`}>hi!, i&apos;m</div>
+              <div
+                className={`${styles.colorful} ${styles.color1} ${styles.domains}`}>
                 {data.name.toLowerCase()}
               </div>
-              <div className={styles.domains}>a full-stack dev</div>
+              <div className={`${styles.domains}`}>a web developer</div>
             </div>
           </Fade>
           <Fade delay={500} bottom={isMobile} when={loaded}>

@@ -212,6 +212,7 @@
     height: 50vw;
     overflow: hidden;
     font-size: 4.5vw;
+    background-color: rgb(45, 45, 45);
   }
 
   .projectCard:active,
