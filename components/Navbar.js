@@ -24,7 +24,7 @@ function Navbar({containerStyle}) {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://gdsc.community.dev/department-of-computer-science-university-of-delhi-delhi/">
+            href="https://travming.vercel.app">
             LATEST
           </a>
         </div>
