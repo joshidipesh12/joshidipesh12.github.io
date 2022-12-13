@@ -24,7 +24,7 @@ function Navbar({containerStyle}) {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://travming.vercel.app">
+            href="https://rss-swift.vercel.app/">
             LATEST
           </a>
         </div>
