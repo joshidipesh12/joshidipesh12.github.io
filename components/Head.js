@@ -4,7 +4,7 @@ import Head from 'next/head';
 function HeadTag({title, children}) {
   return (
     <Head>
-      <title>{title ? `${title} - ` : ''}Hola amigos ✨🎀</title>
+      <title>{title?.length ? `${title} - ` : ``}Hola amigos ✨🎀</title>
       <meta
         property="og:title"
         content={`${title ? `${title} - ` : ''}Hola amigos ✨🎀`}

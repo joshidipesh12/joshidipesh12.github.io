@@ -1,12 +1,17 @@
 import Link from 'next/link';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import data from '../public/myData.json';
 import styles from '../styles/Navbar.module.css';
 
 function Navbar({containerStyle}) {
-  const twoWord = useState(
-    data.twoWords[Math.floor(Math.random() * data.twoWords.length)],
-  )[0];
+  const [twoWord, setTwoWords] = useState('');
+
+  useEffect(() => {
+    setTwoWords(
+      data.twoWords[Math.floor(Math.random() * data.twoWords.length)],
+    );
+    return () => {};
+  }, []);
 
   return (
     <header style={containerStyle} className={styles.container}>
