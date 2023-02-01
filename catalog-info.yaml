@@ -13,3 +13,6 @@ spec:
   lifecycle: experimental
   owner: team-a
   type: service
+  providesApis:
+    - get-test-data
+    - get-mock-staged-data/{data}
