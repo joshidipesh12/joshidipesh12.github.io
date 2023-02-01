@@ -9,6 +9,10 @@ metadata:
     - component
     - service
   name: test-reference
+  links:
+    - url: https://joshidipesh12.github.io
+      title: My Portfolio Website
+      icon: dashboard
 spec:
   lifecycle: experimental
   owner: team-a
