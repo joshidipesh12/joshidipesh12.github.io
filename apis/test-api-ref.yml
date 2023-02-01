@@ -14,19 +14,6 @@ metadata:
     - url: https://joshidipesh12.github.io
       title: My Portfolio Website
       icon: dashboard
-# relations:
-#   - type: apiProvidedBy
-#     targetRef: component:default/test-reference
-#     target:
-#       kind: component
-#       namespace: default
-#       name: test-reference
-#   - type: ownedBy
-#     targetRef: group:default/team-a
-#     target:
-#       kind: group
-#       namespace: default
-#       name: team-a
 spec:
   type: openapi
   lifecycle: experimental
