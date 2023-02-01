@@ -15,19 +15,19 @@ metadata:
     - url: https://github.com/joshidipesh12/joshidipesh12.github.io
       title: Github Source
       icon: github
-relations:
-  - type: ownedBy
-    targetRef: group:default/team-a
-    target:
-      kind: group
-      namespace: default
-      name: team-a
-  - type: providesApi
-    targetRef: api:default/test-api-ref
-    target:
-      kind: api
-      namespace: default
-      name: test-api-ref
+# relations:
+#   - type: ownedBy
+#     targetRef: group:default/team-a
+#     target:
+#       kind: group
+#       namespace: default
+#       name: team-a
+#   - type: providesApi
+#     targetRef: api:default/test-api-ref
+#     target:
+#       kind: api
+#       namespace: default
+#       name: test-api-ref
 spec:
   type: service
   lifecycle: experimental
