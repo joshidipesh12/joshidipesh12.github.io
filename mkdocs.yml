@@ -1,0 +1,8 @@
+site_name: joshidipesh12.github.io
+site_description: portfolio website
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
